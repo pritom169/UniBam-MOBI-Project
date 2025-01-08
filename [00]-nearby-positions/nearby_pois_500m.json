@@ -1,0 +1,259 @@
+[
+    {
+        "street_name": "Willy-Lessing-Straße + Luitpoldstraße",
+        "nearby_pois": [
+            {
+                "name": "Eiscafe Bassanese",
+                "type": "cafe",
+                "lat": 49.8914738,
+                "lon": 10.8865525,
+                "opening_hours": "PH,Mo-Su 10:00-20:00"
+            },
+            {
+                "name": "Cador",
+                "type": "cafe",
+                "lat": 49.8920234,
+                "lon": 10.8881561,
+                "opening_hours": "Tu-Fr 12:00-18:00; Sa,Su 10:00-18:00; Mo off"
+            },
+            {
+                "name": "Riffelmacher",
+                "type": "cafe",
+                "lat": 49.8918552,
+                "lon": 10.8879748,
+                "opening_hours": "Mo-Su 10:00-18:00"
+            },
+            {
+                "name": "Cafe Del Corso",
+                "type": "cafe",
+                "lat": 49.8917708,
+                "lon": 10.8878648,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Casa Italia",
+                "type": "restaurant",
+                "lat": 49.8914918,
+                "lon": 10.8857579,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Hofbräu",
+                "type": "restaurant",
+                "lat": 49.8911105,
+                "lon": 10.886055,
+                "opening_hours": "Th-Mo 11:00-22:00+; Tu,We 17:00-22:00+"
+            },
+            {
+                "name": "Cafe Müller",
+                "type": "cafe",
+                "lat": 49.8929117,
+                "lon": 10.8874091,
+                "opening_hours": "Su-Th 09:00-00:00; Fr-Sa 09:00-01:00"
+            },
+            {
+                "name": "Riffelmacher",
+                "type": "cafe",
+                "lat": 49.8918552,
+                "lon": 10.8879748,
+                "opening_hours": "Mo-Su 10:00-18:00"
+            },
+            {
+                "name": "AU6",
+                "type": "cafe",
+                "lat": 49.892662,
+                "lon": 10.8876701,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Bamberger Kaffeerösterei M.A.G.",
+                "type": "cafe",
+                "lat": 49.8925749,
+                "lon": 10.8876731,
+                "opening_hours": "Mo-Fr 07:30-18:00; Sa 10:00-18:00; Su 13:00-18:00"
+            },
+            {
+                "name": "stadt proviant",
+                "type": "cafe",
+                "lat": 49.8925395,
+                "lon": 10.8875105,
+                "opening_hours": "Mo-Sa 10:00-17:00"
+            },
+            {
+                "name": "Fischerman's Cafe + Bar",
+                "type": "cafe",
+                "lat": 49.8927415,
+                "lon": 10.8876465,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Salbei + Lavendel",
+                "type": "cafe",
+                "lat": 49.8932614,
+                "lon": 10.8873297,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Osteria Cuatro Gatos",
+                "type": "restaurant",
+                "lat": 49.8930566,
+                "lon": 10.8875731,
+                "opening_hours": "Mo-Su 12:00-14:30,17:00-22:00"
+            },
+            {
+                "name": "Pizza und Kebab Bros, Montalia",
+                "type": "restaurant",
+                "lat": 49.8930435,
+                "lon": 10.8874119,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Bistro Ravi",
+                "type": "restaurant",
+                "lat": 49.8929489,
+                "lon": 10.8878422,
+                "opening_hours": "Mo-Sa 11:30-20:00; Su off"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8926277,
+                "lon": 10.8866283,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8922921,
+                "lon": 10.8877604,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Apotheke am Kranen",
+                "type": "pharmacy",
+                "lat": 49.8923737,
+                "lon": 10.8878149,
+                "opening_hours": "Mo-Fr 08:00-19:00; Sa 09:00-16:00"
+            },
+            {
+                "name": "Henrietta",
+                "type": "restaurant",
+                "lat": 49.8904204,
+                "lon": 10.8878041,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Henri",
+                "type": "restaurant",
+                "lat": 49.8906132,
+                "lon": 10.8874941,
+                "opening_hours": "Mo off; Tu-Th 11:30-15:00, 17:30-24:00; Fr 11:30-15:00, 17:30-01:00; Sa 11:30-01:00; Su 11:30-24:00"
+            },
+            {
+                "name": "Parkhaus City-Altstadt",
+                "type": "parking",
+                "lat": 49.8906387,
+                "lon": 10.8882242,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8904522,
+                "lon": 10.8861005,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8901862,
+                "lon": 10.8870024,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Eckerts",
+                "type": "restaurant",
+                "lat": 49.889295,
+                "lon": 10.8877919,
+                "opening_hours": "Mo,Tu,Fr,Sa,Su,PH 07:00-24:00; We,Th 07:00-17:00"
+            },
+            {
+                "name": "Aposto",
+                "type": "restaurant",
+                "lat": 49.8909022,
+                "lon": 10.8888832,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Henrietta",
+                "type": "restaurant",
+                "lat": 49.8904204,
+                "lon": 10.8878041,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Henri",
+                "type": "restaurant",
+                "lat": 49.8906132,
+                "lon": 10.8874941,
+                "opening_hours": "Mo off; Tu-Th 11:30-15:00, 17:30-24:00; Fr 11:30-15:00, 17:30-01:00; Sa 11:30-01:00; Su 11:30-24:00"
+            },
+            {
+                "name": "Parkhaus City-Altstadt",
+                "type": "parking",
+                "lat": 49.8906387,
+                "lon": 10.8882242,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8901862,
+                "lon": 10.8870024,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Luitpold- Boulevard-Cafè-Bistro-Bar",
+                "type": "cafe",
+                "lat": 49.8912052,
+                "lon": 10.8917678,
+                "opening_hours": "Su-Th 09:00-23:00, Fr,Sa 09:00-24:00"
+            },
+            {
+                "name": "Café Rondo",
+                "type": "cafe",
+                "lat": 49.892122,
+                "lon": 10.892487,
+                "opening_hours": "Mo-Su 07:00-20:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8913345,
+                "lon": 10.8929634,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8921819,
+                "lon": 10.8922514,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Karl Anton",
+                "type": "restaurant",
+                "lat": 49.8967282,
+                "lon": 10.8954298,
+                "opening_hours": "Th-Mo 17:00-23:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8904522,
+                "lon": 10.8861005,
+                "opening_hours": "Not available"
+            }
+        ]
+    }
+]

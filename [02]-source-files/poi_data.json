@@ -1,0 +1,1289 @@
+[
+    {
+        "address": "Ob. Br\u00fccke",
+        "coordinates": {
+            "lat": 49.8915034,
+            "lon": 10.8870214
+        },
+        "pois": [
+            {
+                "name": "Eiscafe Bassanese",
+                "type": "cafe",
+                "lat": 49.8914738,
+                "lon": 10.8865525,
+                "opening_hours": "PH,Mo-Su 10:00-20:00"
+            },
+            {
+                "name": "Cador",
+                "type": "cafe",
+                "lat": 49.8920234,
+                "lon": 10.8881561,
+                "opening_hours": "Tu-Fr 12:00-18:00; Sa,Su 10:00-18:00; Mo off"
+            },
+            {
+                "name": "Riffelmacher",
+                "type": "cafe",
+                "lat": 49.8918552,
+                "lon": 10.8879748,
+                "opening_hours": "Mo-Su 10:00-18:00"
+            },
+            {
+                "name": "Cafe Del Corso",
+                "type": "cafe",
+                "lat": 49.8917708,
+                "lon": 10.8878648,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Casa Italia",
+                "type": "restaurant",
+                "lat": 49.8914918,
+                "lon": 10.8857579,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Hofbr\u00e4u",
+                "type": "restaurant",
+                "lat": 49.8911105,
+                "lon": 10.886055,
+                "opening_hours": "Th-Mo 11:00-22:00+; Tu,We 17:00-22:00+"
+            }
+        ]
+    },
+    {
+        "address": "Ludwig-Donau-Main-Kanal",
+        "coordinates": {
+            "lat": 49.245884,
+            "lon": 11.4491586
+        },
+        "pois": []
+    },
+    {
+        "address": "M\u00fchlw\u00f6rth",
+        "coordinates": {
+            "lat": 47.70409815,
+            "lon": 11.164804027680168
+        },
+        "pois": []
+    },
+    {
+        "address": "Am Kranen",
+        "coordinates": {
+            "lat": 49.8924148,
+            "lon": 10.8868873
+        },
+        "pois": [
+            {
+                "name": "Cafe M\u00fcller",
+                "type": "cafe",
+                "lat": 49.8929117,
+                "lon": 10.8874091,
+                "opening_hours": "Su-Th 09:00-00:00; Fr-Sa 09:00-01:00"
+            },
+            {
+                "name": "Riffelmacher",
+                "type": "cafe",
+                "lat": 49.8918552,
+                "lon": 10.8879748,
+                "opening_hours": "Mo-Su 10:00-18:00"
+            },
+            {
+                "name": "AU6",
+                "type": "cafe",
+                "lat": 49.892662,
+                "lon": 10.8876701,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Bamberger Kaffeer\u00f6sterei M.A.G.",
+                "type": "cafe",
+                "lat": 49.8925749,
+                "lon": 10.8876731,
+                "opening_hours": "Mo-Fr 07:30-18:00; Sa 10:00-18:00; Su 13:00-18:00"
+            },
+            {
+                "name": "stadt proviant",
+                "type": "cafe",
+                "lat": 49.8925395,
+                "lon": 10.8875105,
+                "opening_hours": "Mo-Sa 10:00-17:00"
+            },
+            {
+                "name": "Fischerman's Cafe + Bar",
+                "type": "cafe",
+                "lat": 49.8927415,
+                "lon": 10.8876465,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Salbei + Lavendel",
+                "type": "cafe",
+                "lat": 49.8932614,
+                "lon": 10.8873297,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Osteria Cuatro Gatos",
+                "type": "restaurant",
+                "lat": 49.8930566,
+                "lon": 10.8875731,
+                "opening_hours": "Mo-Su 12:00-14:30,17:00-22:00"
+            },
+            {
+                "name": "Pizza und Kebab Bros, Montalia",
+                "type": "restaurant",
+                "lat": 49.8930435,
+                "lon": 10.8874119,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Bistro Ravi",
+                "type": "restaurant",
+                "lat": 49.8929489,
+                "lon": 10.8878422,
+                "opening_hours": "Mo-Sa 11:30-20:00; Su off"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8926277,
+                "lon": 10.8866283,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8922921,
+                "lon": 10.8877604,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Apotheke am Kranen",
+                "type": "pharmacy",
+                "lat": 49.8923737,
+                "lon": 10.8878149,
+                "opening_hours": "Mo-Fr 08:00-19:00; Sa 09:00-16:00"
+            }
+        ]
+    },
+    {
+        "address": "Herrenstra\u00dfe",
+        "coordinates": {
+            "lat": 48.97768889082954,
+            "lon": 14.472242837581799
+        },
+        "pois": [
+            {
+                "name": "\u010caj\u00edrna & Kaf\u00edrna",
+                "type": "cafe",
+                "lat": 48.9778736,
+                "lon": 14.473231,
+                "opening_hours": "24/7"
+            },
+            {
+                "name": "Carpe Diem",
+                "type": "cafe",
+                "lat": 48.9775892,
+                "lon": 14.4725586,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Dlouh\u00e1 ze\u010f",
+                "type": "restaurant",
+                "lat": 48.977815,
+                "lon": 14.4724238,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Pizza & Burger Big Poppa",
+                "type": "restaurant",
+                "lat": 48.9775013,
+                "lon": 14.4716452,
+                "opening_hours": "Mo-Th,Su 11:00-21:40; Fr-Sa 11:00-22:40"
+            },
+            {
+                "name": "Bistro Cobliha",
+                "type": "restaurant",
+                "lat": 48.9777575,
+                "lon": 14.4722487,
+                "opening_hours": "Mo-Tu 11:00-14:00; We-Fr 11:00-22:00"
+            },
+            {
+                "name": "Degustovna",
+                "type": "restaurant",
+                "lat": 48.9774248,
+                "lon": 14.4725741,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Zlat\u00e1 Hv\u011bzda",
+                "type": "restaurant",
+                "lat": 48.97821,
+                "lon": 14.4712205,
+                "opening_hours": "Mo-We 10:30-23:30; Th-Fr 10:30-24:00; Sa 15:00-24:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 48.9778634,
+                "lon": 14.4714675,
+                "opening_hours": "Not available"
+            }
+        ]
+    },
+    {
+        "address": "Am Leinritt",
+        "coordinates": {
+            "lat": 50.122863,
+            "lon": 8.7716224
+        },
+        "pois": [
+            {
+                "name": "Mano",
+                "type": "restaurant",
+                "lat": 50.1232992,
+                "lon": 8.7705492,
+                "opening_hours": "Th-Sa 18:00-21:00; We 18:00-21:00; Su 18:00-21:00"
+            }
+        ]
+    },
+    {
+        "address": "Spinnerei",
+        "coordinates": {
+            "lat": 47.95069305,
+            "lon": 16.28723756157689
+        },
+        "pois": []
+    },
+    {
+        "address": "Untere M\u00fchlbr\u00fccke",
+        "coordinates": {
+            "lat": 49.890402,
+            "lon": 10.887494
+        },
+        "pois": [
+            {
+                "name": "Henrietta",
+                "type": "restaurant",
+                "lat": 49.8904204,
+                "lon": 10.8878041,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Henri",
+                "type": "restaurant",
+                "lat": 49.8906132,
+                "lon": 10.8874941,
+                "opening_hours": "Mo off; Tu-Th 11:30-15:00, 17:30-24:00; Fr 11:30-15:00, 17:30-01:00; Sa 11:30-01:00; Su 11:30-24:00"
+            },
+            {
+                "name": "Parkhaus City-Altstadt",
+                "type": "parking",
+                "lat": 49.8906387,
+                "lon": 10.8882242,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8904522,
+                "lon": 10.8861005,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8901862,
+                "lon": 10.8870024,
+                "opening_hours": "Not available"
+            }
+        ]
+    },
+    {
+        "address": "Dompl",
+        "coordinates": {
+            "lat": 45.463910150000004,
+            "lon": 9.190642628059585
+        },
+        "pois": [
+            {
+                "name": "Bistrot Duomo",
+                "type": "cafe",
+                "lat": 45.463532,
+                "lon": 9.1897949,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Giacomo Arengario",
+                "type": "restaurant",
+                "lat": 45.4635248,
+                "lon": 9.1902324,
+                "opening_hours": "Not available"
+            }
+        ]
+    },
+    {
+        "address": "Altenburg Castle",
+        "coordinates": {
+            "lat": 51.0443032,
+            "lon": 9.2127331
+        },
+        "pois": []
+    },
+    {
+        "address": "Maximilianspl",
+        "coordinates": {
+            "lat": 48.14213035,
+            "lon": 11.571837873128722
+        },
+        "pois": [
+            {
+                "name": "Burger & Lobster Bank",
+                "type": "restaurant",
+                "lat": 48.1413132,
+                "lon": 11.5722106,
+                "opening_hours": "Mo-Sa 18:00-04:00"
+            }
+        ]
+    },
+    {
+        "address": "Michelsberg",
+        "coordinates": {
+            "lat": 50.5365779,
+            "lon": 14.0819309
+        },
+        "pois": []
+    },
+    {
+        "address": "Ob. M\u00fchlbr\u00fccke",
+        "coordinates": {
+            "lat": 49.8891449,
+            "lon": 10.887084
+        },
+        "pois": [
+            {
+                "name": "Eckerts",
+                "type": "restaurant",
+                "lat": 49.889295,
+                "lon": 10.8877919,
+                "opening_hours": "Mo,Tu,Fr,Sa,Su,PH 07:00-24:00; We,Th 07:00-17:00"
+            }
+        ]
+    },
+    {
+        "address": "Schiffbauplatz",
+        "coordinates": {
+            "lat": 47.3885442,
+            "lon": 8.519688288143614
+        },
+        "pois": [
+            {
+                "name": "Soho",
+                "type": "restaurant",
+                "lat": 47.3884346,
+                "lon": 8.5208041,
+                "opening_hours": "Tu-Th 17:00-24:00, Fr 17:00-02:00, Sa 18:00-04:00"
+            },
+            {
+                "name": "LaSalle",
+                "type": "restaurant",
+                "lat": 47.3886695,
+                "lon": 8.5191166,
+                "opening_hours": "Mo-Tu 11:00-24:00, We-Th 11:00-01:00, Fr 11:00-02:00, Sa 17:00-02:00, Su 17:00-24:00"
+            },
+            {
+                "name": "Pi\u00f9",
+                "type": "restaurant",
+                "lat": 47.3886962,
+                "lon": 8.520129,
+                "opening_hours": "Mo-Th 11:30-14:30,17:30-23:30; Fr 11:30-14:30,17:30-24:00; Sa 11:30-24:00; Su 11:30-23:00"
+            },
+            {
+                "name": "Kai Sushi",
+                "type": "restaurant",
+                "lat": 47.388899,
+                "lon": 8.5203297,
+                "opening_hours": "Mo-Fr 11:30-14:00, 17:30-23:00; Sa-Su 17:30-23:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 47.3881689,
+                "lon": 8.5196661,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Z\u00fcrcher Kantonalbank",
+                "type": "atm",
+                "lat": 47.3881455,
+                "lon": 8.5207477,
+                "opening_hours": "24/7"
+            }
+        ]
+    },
+    {
+        "address": "Obere Sandstr",
+        "coordinates": {
+            "lat": 49.89186448070571,
+            "lon": 10.883738788628914
+        },
+        "pois": [
+            {
+                "name": "Hofb\u00e4ckerei Seel",
+                "type": "cafe",
+                "lat": 49.8917371,
+                "lon": 10.8847595,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Zuckerst\u00fcck",
+                "type": "cafe",
+                "lat": 49.8917919,
+                "lon": 10.8843653,
+                "opening_hours": "Mo-Fr 11:00-18:00; Sa,Su,PH 11:00-18:00"
+            },
+            {
+                "name": "Caf\u00e9 Marle",
+                "type": "cafe",
+                "lat": 49.8918124,
+                "lon": 10.8842719,
+                "opening_hours": "Mo-Su 11:00-18:00"
+            },
+            {
+                "name": "Kachelofen",
+                "type": "restaurant",
+                "lat": 49.8916528,
+                "lon": 10.8843859,
+                "opening_hours": "Mo-Su 10:00-01:00"
+            },
+            {
+                "name": "Scheiners am Dom",
+                "type": "restaurant",
+                "lat": 49.8915372,
+                "lon": 10.8842985,
+                "opening_hours": "12:00-22:00"
+            },
+            {
+                "name": "Schlenkerla",
+                "type": "restaurant",
+                "lat": 49.8916874,
+                "lon": 10.8850088,
+                "opening_hours": "09:30-23:30"
+            },
+            {
+                "name": "Ambr\u00e4usianum",
+                "type": "restaurant",
+                "lat": 49.8917724,
+                "lon": 10.8846347,
+                "opening_hours": "Tu-Sa 11:00-23:00; Su 11:00-21:00"
+            },
+            {
+                "name": "Alt Ringlein",
+                "type": "restaurant",
+                "lat": 49.8915684,
+                "lon": 10.8847895,
+                "opening_hours": "11:00-23:00"
+            },
+            {
+                "name": "Vita",
+                "type": "restaurant",
+                "lat": 49.8924958,
+                "lon": 10.8833585,
+                "opening_hours": "Th-Tu 17:30-22:00; We 00:00-24:00"
+            },
+            {
+                "name": "Ah\u00f6rnla im Sand",
+                "type": "restaurant",
+                "lat": 49.8921608,
+                "lon": 10.8832393,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "samrat",
+                "type": "restaurant",
+                "lat": 49.892385,
+                "lon": 10.8832666,
+                "opening_hours": "13:00-02:00"
+            },
+            {
+                "name": "Die K\u00fcche",
+                "type": "restaurant",
+                "lat": 49.8925852,
+                "lon": 10.8829588,
+                "opening_hours": "We-Su 12:00-15:00, 17:00-22:00"
+            }
+        ]
+    },
+    {
+        "address": "Gertrauden Stra\u00dfe",
+        "coordinates": {
+            "lat": 52.51297374722555,
+            "lon": 13.4043853027749
+        },
+        "pois": [
+            {
+                "name": "Caf\u00e9 & Restaurant am Petriplatz",
+                "type": "restaurant",
+                "lat": 52.5129204,
+                "lon": 13.4032613,
+                "opening_hours": "We-Su 09:00-16:00"
+            },
+            {
+                "name": "Fischerinsel-Apotheke",
+                "type": "pharmacy",
+                "lat": 52.5133809,
+                "lon": 13.4053524,
+                "opening_hours": "Mo-Fr 08:00-19:00; Sa 08:30-14:00"
+            }
+        ]
+    },
+    {
+        "address": "Heiliggrabstra\u00dfe",
+        "coordinates": {
+            "lat": 49.9019498,
+            "lon": 10.8920186
+        },
+        "pois": []
+    },
+    {
+        "address": "Benediktinerweg",
+        "coordinates": {
+            "lat": 50.7285006,
+            "lon": 6.1712659
+        },
+        "pois": []
+    },
+    {
+        "address": "Geyersw\u00f6rthstra\u00dfe",
+        "coordinates": {
+            "lat": 49.8904366,
+            "lon": 10.8881612
+        },
+        "pois": [
+            {
+                "name": "Aposto",
+                "type": "restaurant",
+                "lat": 49.8909022,
+                "lon": 10.8888832,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Henrietta",
+                "type": "restaurant",
+                "lat": 49.8904204,
+                "lon": 10.8878041,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Henri",
+                "type": "restaurant",
+                "lat": 49.8906132,
+                "lon": 10.8874941,
+                "opening_hours": "Mo off; Tu-Th 11:30-15:00, 17:30-24:00; Fr 11:30-15:00, 17:30-01:00; Sa 11:30-01:00; Su 11:30-24:00"
+            },
+            {
+                "name": "Parkhaus City-Altstadt",
+                "type": "parking",
+                "lat": 49.8906387,
+                "lon": 10.8882242,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8901862,
+                "lon": 10.8870024,
+                "opening_hours": "Not available"
+            }
+        ]
+    },
+    {
+        "address": "Michaelsberg",
+        "coordinates": {
+            "lat": 49.0885267,
+            "lon": 8.565187
+        },
+        "pois": []
+    },
+    {
+        "address": "Judenstra\u00dfe",
+        "coordinates": {
+            "lat": 52.5173168,
+            "lon": 13.4103355
+        },
+        "pois": []
+    },
+    {
+        "address": "Sch\u00f6nleinsplatz",
+        "coordinates": {
+            "lat": 49.891495649999996,
+            "lon": 10.892326999784213
+        },
+        "pois": [
+            {
+                "name": "Luitpold- Boulevard-Caf\u00e8-Bistro-Bar",
+                "type": "cafe",
+                "lat": 49.8912052,
+                "lon": 10.8917678,
+                "opening_hours": "Su-Th 09:00-23:00, Fr,Sa 09:00-24:00"
+            },
+            {
+                "name": "Caf\u00e9 Rondo",
+                "type": "cafe",
+                "lat": 49.892122,
+                "lon": 10.892487,
+                "opening_hours": "Mo-Su 07:00-20:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8913345,
+                "lon": 10.8929634,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8921819,
+                "lon": 10.8922514,
+                "opening_hours": "Not available"
+            }
+        ]
+    },
+    {
+        "address": "Centurione I",
+        "coordinates": {
+            "lat": 51.5062837,
+            "lon": -0.0257144
+        },
+        "pois": [
+            {
+                "name": "Momo Canteen",
+                "type": "restaurant",
+                "lat": 51.5058606,
+                "lon": -0.0257476,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 51.5066995,
+                "lon": -0.0250262,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Westferry Circus Car Park",
+                "type": "parking",
+                "lat": 51.5058555,
+                "lon": -0.0262372,
+                "opening_hours": "24/7"
+            }
+        ]
+    },
+    {
+        "address": "Obere Sandstra\u00dfe",
+        "coordinates": {
+            "lat": 49.89186448070571,
+            "lon": 10.883738788628914
+        },
+        "pois": [
+            {
+                "name": "Hofb\u00e4ckerei Seel",
+                "type": "cafe",
+                "lat": 49.8917371,
+                "lon": 10.8847595,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Zuckerst\u00fcck",
+                "type": "cafe",
+                "lat": 49.8917919,
+                "lon": 10.8843653,
+                "opening_hours": "Mo-Fr 11:00-18:00; Sa,Su,PH 11:00-18:00"
+            },
+            {
+                "name": "Caf\u00e9 Marle",
+                "type": "cafe",
+                "lat": 49.8918124,
+                "lon": 10.8842719,
+                "opening_hours": "Mo-Su 11:00-18:00"
+            },
+            {
+                "name": "Kachelofen",
+                "type": "restaurant",
+                "lat": 49.8916528,
+                "lon": 10.8843859,
+                "opening_hours": "Mo-Su 10:00-01:00"
+            },
+            {
+                "name": "Scheiners am Dom",
+                "type": "restaurant",
+                "lat": 49.8915372,
+                "lon": 10.8842985,
+                "opening_hours": "12:00-22:00"
+            },
+            {
+                "name": "Schlenkerla",
+                "type": "restaurant",
+                "lat": 49.8916874,
+                "lon": 10.8850088,
+                "opening_hours": "09:30-23:30"
+            },
+            {
+                "name": "Ambr\u00e4usianum",
+                "type": "restaurant",
+                "lat": 49.8917724,
+                "lon": 10.8846347,
+                "opening_hours": "Tu-Sa 11:00-23:00; Su 11:00-21:00"
+            },
+            {
+                "name": "Alt Ringlein",
+                "type": "restaurant",
+                "lat": 49.8915684,
+                "lon": 10.8847895,
+                "opening_hours": "11:00-23:00"
+            },
+            {
+                "name": "Vita",
+                "type": "restaurant",
+                "lat": 49.8924958,
+                "lon": 10.8833585,
+                "opening_hours": "Th-Tu 17:30-22:00; We 00:00-24:00"
+            },
+            {
+                "name": "Ah\u00f6rnla im Sand",
+                "type": "restaurant",
+                "lat": 49.8921608,
+                "lon": 10.8832393,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "samrat",
+                "type": "restaurant",
+                "lat": 49.892385,
+                "lon": 10.8832666,
+                "opening_hours": "13:00-02:00"
+            },
+            {
+                "name": "Die K\u00fcche",
+                "type": "restaurant",
+                "lat": 49.8925852,
+                "lon": 10.8829588,
+                "opening_hours": "We-Su 12:00-15:00, 17:00-22:00"
+            }
+        ]
+    },
+    {
+        "address": "Hans-Sch\u00fctz-Stra\u00dfe",
+        "coordinates": {
+            "lat": 49.8889679,
+            "lon": 10.908518
+        },
+        "pois": [
+            {
+                "name": "Misako",
+                "type": "restaurant",
+                "lat": 49.889691,
+                "lon": 10.9077218,
+                "opening_hours": "Mo-Fr 11:30-14:30,17:30-23:00; PH,Sa,Su 17:30-23:00"
+            },
+            {
+                "name": "Wunderburg-Apotheke",
+                "type": "pharmacy",
+                "lat": 49.8893905,
+                "lon": 10.9077423,
+                "opening_hours": "Mo-Fr 08:00-19:00; Sa 08:00-14:00"
+            }
+        ]
+    },
+    {
+        "address": "Kunigundendamm",
+        "coordinates": {
+            "lat": 49.8907447,
+            "lon": 10.9020276
+        },
+        "pois": []
+    },
+    {
+        "address": "Schillerplatz",
+        "coordinates": {
+            "lat": 49.998767349999994,
+            "lon": 8.267101330663156
+        },
+        "pois": [
+            {
+                "name": "Caf\u00e9 Blum",
+                "type": "cafe",
+                "lat": 49.9987476,
+                "lon": 8.2679854,
+                "opening_hours": "Mo off; Tu-Su 10:00-18:00"
+            },
+            {
+                "name": "Coffee Bay",
+                "type": "cafe",
+                "lat": 49.99904,
+                "lon": 8.2667012,
+                "opening_hours": "Mo-Fr 07:00-19:00; Sa 09:00-18:00"
+            },
+            {
+                "name": "CoCo Fresh Tea & Juice",
+                "type": "cafe",
+                "lat": 49.9989955,
+                "lon": 8.2667684,
+                "opening_hours": "Mo-We 11:30-14:30; Th-Sa 11:30-18:30"
+            },
+            {
+                "name": "El Chico",
+                "type": "restaurant",
+                "lat": 49.9986834,
+                "lon": 8.2682056,
+                "opening_hours": "Mo-Su 18:00-23:00"
+            },
+            {
+                "name": "Santiago",
+                "type": "restaurant",
+                "lat": 49.9986351,
+                "lon": 8.2680686,
+                "opening_hours": "Su-Th 17:30-24:00, Fr,Sa 17:30-02:00"
+            },
+            {
+                "name": "Trattoria Peperoncino",
+                "type": "restaurant",
+                "lat": 49.9989582,
+                "lon": 8.2675461,
+                "opening_hours": "Mo-Su 12:00-15:00,18:00-23:00"
+            },
+            {
+                "name": "Oro Negro",
+                "type": "restaurant",
+                "lat": 49.9985024,
+                "lon": 8.2678316,
+                "opening_hours": "Mo-Su 10:30-24:00"
+            },
+            {
+                "name": "Le BonBon",
+                "type": "restaurant",
+                "lat": 49.9991822,
+                "lon": 8.2670996,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "R\u00f6mer Apotheke am Fastnachtsbrunnen",
+                "type": "pharmacy",
+                "lat": 49.9983831,
+                "lon": 8.2679961,
+                "opening_hours": "Mo-Fr 08:00-18:30; Sa 09:00-14:00"
+            },
+            {
+                "name": "Europa Apotheke",
+                "type": "pharmacy",
+                "lat": 49.9992162,
+                "lon": 8.2664331,
+                "opening_hours": "Mo-Fr 08:00-18:30"
+            }
+        ]
+    },
+    {
+        "address": "Theuerstadt",
+        "coordinates": {
+            "lat": 49.897518649513195,
+            "lon": 10.89592511409535
+        },
+        "pois": [
+            {
+                "name": "Karl Anton",
+                "type": "restaurant",
+                "lat": 49.8967282,
+                "lon": 10.8954298,
+                "opening_hours": "Th-Mo 17:00-23:00"
+            }
+        ]
+    },
+    {
+        "address": "Pfahlplaetzchen",
+        "coordinates": {
+            "lat": 49.89017830282166,
+            "lon": 10.885200022025519
+        },
+        "pois": [
+            {
+                "name": "B\u00e4ckerei Seel",
+                "type": "cafe",
+                "lat": 49.8905264,
+                "lon": 10.885205,
+                "opening_hours": "Mo-Sa 05:45-18:00"
+            },
+            {
+                "name": "MorgenMahl Deli",
+                "type": "cafe",
+                "lat": 49.8903339,
+                "lon": 10.885051,
+                "opening_hours": "Mo-Th 09:00-17:00; Fr-Su 09:00-18:00"
+            },
+            {
+                "name": "KARO18",
+                "type": "cafe",
+                "lat": 49.8910207,
+                "lon": 10.8852333,
+                "opening_hours": "Mo-Sa 10:00-18:00"
+            },
+            {
+                "name": "Brasserie",
+                "type": "restaurant",
+                "lat": 49.8902766,
+                "lon": 10.8848676,
+                "opening_hours": "Mo-Th 17:30-01:00; Fr-Sa 11:30-03:00; Su 11:30-01:00"
+            },
+            {
+                "name": "Bolero",
+                "type": "restaurant",
+                "lat": 49.8897736,
+                "lon": 10.8859275,
+                "opening_hours": "Mo-Fr 17:00-24:00+; PH,Sa,Su 11:30-24:00+"
+            },
+            {
+                "name": "Little Italy Bamberg",
+                "type": "restaurant",
+                "lat": 49.8901242,
+                "lon": 10.8849895,
+                "opening_hours": "Mo-Fr 17:00-01:00; Sa-Su 11:30-01:00"
+            },
+            {
+                "name": "Restaurant Weierich",
+                "type": "restaurant",
+                "lat": 49.8905331,
+                "lon": 10.8855361,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8904522,
+                "lon": 10.8861005,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Hof-Apotheke",
+                "type": "pharmacy",
+                "lat": 49.8910204,
+                "lon": 10.8849373,
+                "opening_hours": "Mo-Fr 08:00-18:00; Sa 08:00-13:00"
+            }
+        ]
+    },
+    {
+        "address": "Gruener Markt",
+        "coordinates": {
+            "lat": 50.979786080810804,
+            "lon": 11.331017819608286
+        },
+        "pois": [
+            {
+                "name": "Samocca",
+                "type": "cafe",
+                "lat": 50.9792221,
+                "lon": 11.331034,
+                "opening_hours": "Mo-Fr 09:00-17:00; Sa 10:00-16:30"
+            },
+            {
+                "name": "Coffee Namu",
+                "type": "cafe",
+                "lat": 50.9803899,
+                "lon": 11.3302701,
+                "opening_hours": "Mo-Fr 12:00-18:00, Sa 13:00-17:30"
+            },
+            {
+                "name": "ACC",
+                "type": "restaurant",
+                "lat": 50.9800837,
+                "lon": 11.3309297,
+                "opening_hours": "11:30-24:00"
+            },
+            {
+                "name": "Residenz-Caf\u00e9",
+                "type": "restaurant",
+                "lat": 50.9799064,
+                "lon": 11.3309686,
+                "opening_hours": "Mo-Sa 08:00-23:00; Su 08:00-17:00"
+            },
+            {
+                "name": "Cielo",
+                "type": "restaurant",
+                "lat": 50.9797075,
+                "lon": 11.3305118,
+                "opening_hours": "Tu-Sa 08:00-01:00, Su 08:00-16:00"
+            },
+            {
+                "name": "Koi.7",
+                "type": "restaurant",
+                "lat": 50.9803025,
+                "lon": 11.3303828,
+                "opening_hours": "Mo-Th 11:30-15:00; Fr-Sa 18:00-21:30"
+            },
+            {
+                "name": "Kawa",
+                "type": "restaurant",
+                "lat": 50.9798967,
+                "lon": 11.3307601,
+                "opening_hours": "Not available"
+            }
+        ]
+    },
+    {
+        "address": "Hainstra\u00dfe",
+        "coordinates": {
+            "lat": 51.3416974857743,
+            "lon": 12.373827253916579
+        },
+        "pois": [
+            {
+                "name": "San Remo",
+                "type": "cafe",
+                "lat": 51.3423944,
+                "lon": 12.3735075,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Starbucks",
+                "type": "cafe",
+                "lat": 51.3425536,
+                "lon": 12.3734297,
+                "opening_hours": "Mo-Su, PH off"
+            },
+            {
+                "name": "Spizz",
+                "type": "restaurant",
+                "lat": 51.3408621,
+                "lon": 12.3740728,
+                "opening_hours": "Mo-Su 09:00+"
+            },
+            {
+                "name": "Corner",
+                "type": "restaurant",
+                "lat": 51.3409406,
+                "lon": 12.3730902,
+                "opening_hours": "Tu-Sa 14:00-21:00+"
+            },
+            {
+                "name": "Dolce Vita",
+                "type": "restaurant",
+                "lat": 51.34091,
+                "lon": 12.3732258,
+                "opening_hours": "Mo-Su,PH 12:00-22:00+"
+            },
+            {
+                "name": "F\u00fcrst Albert von Wettin",
+                "type": "restaurant",
+                "lat": 51.3409081,
+                "lon": 12.3734137,
+                "opening_hours": "Mo-Su 12:00+"
+            },
+            {
+                "name": "Barfusz",
+                "type": "restaurant",
+                "lat": 51.3408793,
+                "lon": 12.3736887,
+                "opening_hours": "Sa 09:00+; Su 10:00+; Mo-Fr 11:00+"
+            },
+            {
+                "name": "Lerchennest",
+                "type": "restaurant",
+                "lat": 51.3411753,
+                "lon": 12.372763,
+                "opening_hours": "Mo-We 11:30-22:00; Th-Su 09:00-22:00"
+            },
+            {
+                "name": "Weinstock",
+                "type": "restaurant",
+                "lat": 51.3412307,
+                "lon": 12.3742962,
+                "opening_hours": "Mo-Sa 11:30-14:30,17:00-23:00; Su 17:00-23:00"
+            },
+            {
+                "name": "Wenzel Restaurant",
+                "type": "restaurant",
+                "lat": 51.3415097,
+                "lon": 12.3728587,
+                "opening_hours": "Su-Th 11:30-22:00; Fr-Sa 11:30-23:00"
+            },
+            {
+                "name": "Buon Gusto",
+                "type": "restaurant",
+                "lat": 51.3410262,
+                "lon": 12.3729924,
+                "opening_hours": "Mo-Su,PH 10:30-24:00+"
+            },
+            {
+                "name": "Pho Viet",
+                "type": "restaurant",
+                "lat": 51.3422034,
+                "lon": 12.3748283,
+                "opening_hours": "Mo-Fr 11:30-15:00,17:00-22:00; Sa 11:30-22:00; Su off"
+            },
+            {
+                "name": "Barthels Hof",
+                "type": "restaurant",
+                "lat": 51.3412284,
+                "lon": 12.3735101,
+                "opening_hours": "11:30-14:00,17:00-22:00"
+            },
+            {
+                "name": "Augustiner am Markt",
+                "type": "restaurant",
+                "lat": 51.3412334,
+                "lon": 12.3746898,
+                "opening_hours": "Mo-Su 10:00-24:00"
+            },
+            {
+                "name": "Wenzel",
+                "type": "restaurant",
+                "lat": 51.3412972,
+                "lon": 12.3726179,
+                "opening_hours": "Su-Th 11:30-22:00; Fr-Sa 11:30-23:00"
+            },
+            {
+                "name": "Ramen 1974",
+                "type": "restaurant",
+                "lat": 51.3420553,
+                "lon": 12.3742904,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Adler Apotheke",
+                "type": "pharmacy",
+                "lat": 51.3417537,
+                "lon": 12.3736393,
+                "opening_hours": "Mo-Sa 08:00-20:00"
+            }
+        ]
+    },
+    {
+        "address": "Heumarkt",
+        "coordinates": {
+            "lat": 50.936759550000005,
+            "lon": 6.96062585691273
+        },
+        "pois": [
+            {
+                "name": "Eiscafe Stella D'oro",
+                "type": "cafe",
+                "lat": 50.937133,
+                "lon": 6.96116,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Fubachi",
+                "type": "restaurant",
+                "lat": 50.9360299,
+                "lon": 6.9600968,
+                "opening_hours": "Mo-Fr 12:00-14:30,17:30-22:00; PH,Sa,Su 12:00-22:00"
+            },
+            {
+                "name": "Heumarkt",
+                "type": "restaurant",
+                "lat": 50.9361507,
+                "lon": 6.9600899,
+                "opening_hours": "Mo-Fr 15:00-21:00; PH,Sa,Su 12:00-21:00"
+            },
+            {
+                "name": "XII Apostel",
+                "type": "restaurant",
+                "lat": 50.9375077,
+                "lon": 6.9605742,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Augustiner",
+                "type": "restaurant",
+                "lat": 50.9367864,
+                "lon": 6.961194,
+                "opening_hours": "Mo-Su 11:00-24:00"
+            },
+            {
+                "name": "Sausalitos",
+                "type": "restaurant",
+                "lat": 50.9369018,
+                "lon": 6.9601175,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Mai Thai",
+                "type": "restaurant",
+                "lat": 50.9370567,
+                "lon": 6.960122,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Latino Loco",
+                "type": "restaurant",
+                "lat": 50.9367643,
+                "lon": 6.9601365,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Pizzeria Grande Milano",
+                "type": "restaurant",
+                "lat": 50.9370418,
+                "lon": 6.961161,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "H\u00e4nneschen und die Pfefferm\u00fchle",
+                "type": "restaurant",
+                "lat": 50.9373081,
+                "lon": 6.9612879,
+                "opening_hours": "Su-Th 12:00-23:00, Fr-Sa 12:00-24:00"
+            },
+            {
+                "name": "Keule",
+                "type": "restaurant",
+                "lat": 50.9374061,
+                "lon": 6.9612206,
+                "opening_hours": "Mo-Th 12:00-24:00, Fr-Sa 12:00-03:00, Su 12:00-22:00"
+            },
+            {
+                "name": "Ausschank Brauerei zum Pfaffen",
+                "type": "restaurant",
+                "lat": 50.9375429,
+                "lon": 6.9609898,
+                "opening_hours": "Mo-Su 11:00-24:00"
+            },
+            {
+                "name": "Gilden im Zims \u201cHeimat k\u00f6lscher Helden\u201d",
+                "type": "restaurant",
+                "lat": 50.9372672,
+                "lon": 6.9600653,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "60 seconds to napoli",
+                "type": "restaurant",
+                "lat": 50.9372198,
+                "lon": 6.9611553,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "El Chango",
+                "type": "restaurant",
+                "lat": 50.9366757,
+                "lon": 6.9598395,
+                "opening_hours": "Mo-Fr 12:00-14:00, 18:00-24:00; Sa 18:00-24:00; Su 12:00-14:00, 18:00-24:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "atm",
+                "lat": 50.9375185,
+                "lon": 6.9598765,
+                "opening_hours": "24/7"
+            }
+        ]
+    },
+    {
+        "address": "St.-Getreu-Strasse",
+        "coordinates": {
+            "lat": 49.88870731433115,
+            "lon": 10.864566201286115
+        },
+        "pois": []
+    }
+]

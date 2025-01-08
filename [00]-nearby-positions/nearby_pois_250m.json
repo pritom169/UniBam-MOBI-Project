@@ -1,0 +1,42 @@
+[
+    {
+        "street_name": "Willy-Lessing-Straße + Luitpoldstraße",
+        "nearby_pois": [
+            {
+                "name": "Luitpold- Boulevard-Cafè-Bistro-Bar",
+                "type": "cafe",
+                "lat": 49.8912052,
+                "lon": 10.8917678,
+                "opening_hours": "Su-Th 09:00-23:00, Fr,Sa 09:00-24:00"
+            },
+            {
+                "name": "Café Rondo",
+                "type": "cafe",
+                "lat": 49.892122,
+                "lon": 10.892487,
+                "opening_hours": "Mo-Su 07:00-20:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8913345,
+                "lon": 10.8929634,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8921819,
+                "lon": 10.8922514,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Karl Anton",
+                "type": "restaurant",
+                "lat": 49.8967282,
+                "lon": 10.8954298,
+                "opening_hours": "Th-Mo 17:00-23:00"
+            }
+        ]
+    }
+]
