@@ -83,7 +83,7 @@ def main():
             street_data = json.load(f)
 
         # Read POI data
-        with open('poi_data.json', 'r', encoding='utf-8') as f:
+        with open('poi-data.json', 'r', encoding='utf-8') as f:
             poi_data = json.load(f)
 
         # Analyze proximity

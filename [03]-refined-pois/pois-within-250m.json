@@ -1,0 +1,644 @@
+[
+    {
+        "street_name": "Willy-Lessing-Straße + Luitpoldstraße",
+        "nearby_pois": [
+            {
+                "name": "Kaffeehaus Beckstein",
+                "type": "cafe",
+                "lat": 49.8924913,
+                "lon": 10.8894319,
+                "opening_hours": "Tu-Sa 08:30-18:00; PH,Su,Mo off"
+            },
+            {
+                "name": "Kater Murr",
+                "type": "cafe",
+                "lat": 49.8922029,
+                "lon": 10.8900691,
+                "opening_hours": "Mo-Fr 10:00-17:00; Sa-Su 10:00-18:00"
+            },
+            {
+                "name": "EnchanTee",
+                "type": "cafe",
+                "lat": 49.8921225,
+                "lon": 10.8904382,
+                "opening_hours": "Mo-Sa 11:30-20:00"
+            },
+            {
+                "name": "Restaurant Poseidon",
+                "type": "restaurant",
+                "lat": 49.8916663,
+                "lon": 10.8894721,
+                "opening_hours": "We-Su 11:30-13:45, Mo,We-Sa 17:30-22:30, Su 17:30-21:30; Tu off"
+            },
+            {
+                "name": "Feuerpfeils Holzofenpizzeria",
+                "type": "restaurant",
+                "lat": 49.891987,
+                "lon": 10.8903154,
+                "opening_hours": "Tu-Sa 17:00-22:00"
+            },
+            {
+                "name": "Aubergine",
+                "type": "restaurant",
+                "lat": 49.8918253,
+                "lon": 10.8896637,
+                "opening_hours": "Fr-Sa 18:00-22:00"
+            },
+            {
+                "name": "Catana",
+                "type": "restaurant",
+                "lat": 49.8924755,
+                "lon": 10.8895501,
+                "opening_hours": "Mo-Sa 11:30-15:00,16:00-21:00; Su 15:00-21:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8923255,
+                "lon": 10.8902265,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Kaffeehaus Beckstein",
+                "type": "cafe",
+                "lat": 49.8924913,
+                "lon": 10.8894319,
+                "opening_hours": "Tu-Sa 08:30-18:00; PH,Su,Mo off"
+            },
+            {
+                "name": "Catana",
+                "type": "restaurant",
+                "lat": 49.8924755,
+                "lon": 10.8895501,
+                "opening_hours": "Mo-Sa 11:30-15:00,16:00-21:00; Su 15:00-21:00"
+            },
+            {
+                "name": "Restaurant Poseidon",
+                "type": "restaurant",
+                "lat": 49.8916663,
+                "lon": 10.8894721,
+                "opening_hours": "We-Su 11:30-13:45, Mo,We-Sa 17:30-22:30, Su 17:30-21:30; Tu off"
+            },
+            {
+                "name": "Bäckerei Fuchs",
+                "type": "cafe",
+                "lat": 49.8981757,
+                "lon": 10.8947217,
+                "opening_hours": "Mo-Fr 06:00-14:00; Sa 07:00-13:00; Su 08:00-13:00"
+            },
+            {
+                "name": "Bella Tandoori Express",
+                "type": "restaurant",
+                "lat": 49.8995663,
+                "lon": 10.8969351,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Hong Kong Sushi Bar",
+                "type": "restaurant",
+                "lat": 49.898704,
+                "lon": 10.8961112,
+                "opening_hours": "Mo-Fr 11:00-14:00,17:00-22:00; PH,Sa,Su 16:00-22:00"
+            },
+            {
+                "name": "Vegan Food Rebels",
+                "type": "restaurant",
+                "lat": 49.898568,
+                "lon": 10.8958889,
+                "opening_hours": "We-Sa 12:00-14:00,17:30-20:00"
+            },
+            {
+                "name": "Luitpold53",
+                "type": "restaurant",
+                "lat": 49.900336,
+                "lon": 10.897382,
+                "opening_hours": "Mo-Fr 08:00-13:30"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8994793,
+                "lon": 10.8969523,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8983226,
+                "lon": 10.895196,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8987273,
+                "lon": 10.8959904,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Luitpoldapotheke",
+                "type": "pharmacy",
+                "lat": 49.8986211,
+                "lon": 10.8954213,
+                "opening_hours": "Mo-Fr 08:30-13:00,14:00-18:00; Sa 08:30-12:30"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "charging_station",
+                "lat": 49.898958,
+                "lon": 10.89633,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8993407,
+                "lon": 10.892731,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8991989,
+                "lon": 10.8964951,
+                "opening_hours": "24/7"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8986455,
+                "lon": 10.8958666,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Zuckerbrot",
+                "type": "cafe",
+                "lat": 49.8895687,
+                "lon": 10.8908062,
+                "opening_hours": "Tu-Fr 11:00-18:00"
+            },
+            {
+                "name": "Salino Holzofenpizza",
+                "type": "restaurant",
+                "lat": 49.8897624,
+                "lon": 10.8915398,
+                "opening_hours": "Mo-Su 11:00-14:30, Su-Fr 17:00-24:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8905536,
+                "lon": 10.8910509,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8898609,
+                "lon": 10.8910487,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8900029,
+                "lon": 10.8909824,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8891121,
+                "lon": 10.8915085,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8889596,
+                "lon": 10.891728,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Luitpold- Boulevard-Cafè-Bistro-Bar",
+                "type": "cafe",
+                "lat": 49.8912052,
+                "lon": 10.8917678,
+                "opening_hours": "Su-Th 09:00-23:00, Fr,Sa 09:00-24:00"
+            },
+            {
+                "name": "Café Rondo",
+                "type": "cafe",
+                "lat": 49.892122,
+                "lon": 10.892487,
+                "opening_hours": "Mo-Su 07:00-20:00"
+            },
+            {
+                "name": "Blaue Frieda",
+                "type": "cafe",
+                "lat": 49.8910335,
+                "lon": 10.8938431,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Kater Murr",
+                "type": "cafe",
+                "lat": 49.8922029,
+                "lon": 10.8900691,
+                "opening_hours": "Mo-Fr 10:00-17:00; Sa-Su 10:00-18:00"
+            },
+            {
+                "name": "EnchanTee",
+                "type": "cafe",
+                "lat": 49.8921225,
+                "lon": 10.8904382,
+                "opening_hours": "Mo-Sa 11:30-20:00"
+            },
+            {
+                "name": "Hoffmanns",
+                "type": "restaurant",
+                "lat": 49.8903066,
+                "lon": 10.8915885,
+                "opening_hours": "Mo-Fr 11:30-14:00,17:30-23:00, Sa 17:30-23:00"
+            },
+            {
+                "name": "Feuerpfeils Holzofenpizzeria",
+                "type": "restaurant",
+                "lat": 49.891987,
+                "lon": 10.8903154,
+                "opening_hours": "Tu-Sa 17:00-22:00"
+            },
+            {
+                "name": "Aubergine",
+                "type": "restaurant",
+                "lat": 49.8918253,
+                "lon": 10.8896637,
+                "opening_hours": "Fr-Sa 18:00-22:00"
+            },
+            {
+                "name": "Burgerheart",
+                "type": "restaurant",
+                "lat": 49.892002,
+                "lon": 10.8909812,
+                "opening_hours": "Mo-Th 11:30-23:00; Fr-Sa 11:30-00:00; PH Su 12:00-22:00"
+            },
+            {
+                "name": "Parkhaus Zentrum-Süd",
+                "type": "parking",
+                "lat": 49.8910018,
+                "lon": 10.8940516,
+                "opening_hours": "24/7"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8929676,
+                "lon": 10.8933643,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8907658,
+                "lon": 10.8907809,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8913345,
+                "lon": 10.8929634,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8921819,
+                "lon": 10.8922514,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Herzog-Max-Apotheke",
+                "type": "pharmacy",
+                "lat": 49.8914291,
+                "lon": 10.8949649,
+                "opening_hours": "Mo-Fr 08:00-18:30; Sa 09:00-14:00"
+            },
+            {
+                "name": "Hainapotheke",
+                "type": "pharmacy",
+                "lat": 49.8906269,
+                "lon": 10.8932232,
+                "opening_hours": "Mo-Fr 08:00-19:00; Sa 09:00-14:00"
+            },
+            {
+                "name": "Vita-Apotheke",
+                "type": "pharmacy",
+                "lat": 49.8932806,
+                "lon": 10.8920103,
+                "opening_hours": "Mo,Tu,Th 08:00-18:30; We,Fr 08:00-18:00; Sa 08:30-13:30; Su,PH off"
+            },
+            {
+                "name": "Franz-Ludwig-Apotheke",
+                "type": "pharmacy",
+                "lat": 49.8928796,
+                "lon": 10.8936319,
+                "opening_hours": "Mo,Tu,Fr 08:30-18:00; We 08:30-13:30; Th 08:30-18:30"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "atm",
+                "lat": 49.8931528,
+                "lon": 10.8916556,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "motorcycle_parking",
+                "lat": 49.8918291,
+                "lon": 10.8922832,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "motorcycle_parking",
+                "lat": 49.8919609,
+                "lon": 10.8922389,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8905536,
+                "lon": 10.8910509,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8918373,
+                "lon": 10.8921911,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.892057,
+                "lon": 10.8914164,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8923255,
+                "lon": 10.8902265,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8930951,
+                "lon": 10.891789,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8909389,
+                "lon": 10.8943693,
+                "opening_hours": "24/7"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8900029,
+                "lon": 10.8909824,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8929929,
+                "lon": 10.8931455,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8927349,
+                "lon": 10.891078,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8920484,
+                "lon": 10.8922432,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8898709,
+                "lon": 10.8931073,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8915842,
+                "lon": 10.89415,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8910006,
+                "lon": 10.8930201,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.891146,
+                "lon": 10.8921742,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8929186,
+                "lon": 10.8936357,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Uni Bamberg / HS 10",
+                "type": "university",
+                "lat": 49.8898195,
+                "lon": 10.8928666,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Bamberger Berufsfachschule für Kosmetik",
+                "type": "school",
+                "lat": 49.8927052,
+                "lon": 10.8931442,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Praxis am Schönleinsplatz - Dr. Pamela Perona",
+                "type": "clinic",
+                "lat": 49.8924217,
+                "lon": 10.892986,
+                "opening_hours": "Mo 08:30-12:00,15:00-17:00; Tu,We 08:30-12:00; Th 08:30-12:00,16:30-18:00; Fr 08:30-13:00"
+            },
+            {
+                "name": "Bäckerei Fuchs",
+                "type": "cafe",
+                "lat": 49.8981757,
+                "lon": 10.8947217,
+                "opening_hours": "Mo-Fr 06:00-14:00; Sa 07:00-13:00; Su 08:00-13:00"
+            },
+            {
+                "name": "Arabesque",
+                "type": "cafe",
+                "lat": 49.8972077,
+                "lon": 10.8942001,
+                "opening_hours": "Mo-Su 09:00-22:00"
+            },
+            {
+                "name": "Bella Tandoori Express",
+                "type": "restaurant",
+                "lat": 49.8995663,
+                "lon": 10.8969351,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Hong Kong Sushi Bar",
+                "type": "restaurant",
+                "lat": 49.898704,
+                "lon": 10.8961112,
+                "opening_hours": "Mo-Fr 11:00-14:00,17:00-22:00; PH,Sa,Su 16:00-22:00"
+            },
+            {
+                "name": "Vegan Food Rebels",
+                "type": "restaurant",
+                "lat": 49.898568,
+                "lon": 10.8958889,
+                "opening_hours": "We-Sa 12:00-14:00,17:30-20:00"
+            },
+            {
+                "name": "Karl Anton",
+                "type": "restaurant",
+                "lat": 49.8967282,
+                "lon": 10.8954298,
+                "opening_hours": "Th-Mo 17:00-23:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8994793,
+                "lon": 10.8969523,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8983226,
+                "lon": 10.895196,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8987273,
+                "lon": 10.8959904,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Luitpoldapotheke",
+                "type": "pharmacy",
+                "lat": 49.8986211,
+                "lon": 10.8954213,
+                "opening_hours": "Mo-Fr 08:30-13:00,14:00-18:00; Sa 08:30-12:30"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "atm",
+                "lat": 49.8973492,
+                "lon": 10.8942056,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "charging_station",
+                "lat": 49.898958,
+                "lon": 10.89633,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.896923,
+                "lon": 10.8956795,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8977524,
+                "lon": 10.8980692,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8977446,
+                "lon": 10.8943952,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8979365,
+                "lon": 10.8945309,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.897373,
+                "lon": 10.8960704,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8974101,
+                "lon": 10.8960564,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8990642,
+                "lon": 10.897663,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8991989,
+                "lon": 10.8964951,
+                "opening_hours": "24/7"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8986455,
+                "lon": 10.8958666,
+                "opening_hours": "Not available"
+            }
+        ]
+    }
+]
