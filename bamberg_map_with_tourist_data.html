@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aecaa950b2525848b4303c5951fd929b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aecaa950b2525848b4303c5951fd929b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aecaa950b2525848b4303c5951fd929b = L.map(
+                "map_aecaa950b2525848b4303c5951fd929b",
+                {
+                    center: [49.8915326908064, 10.886880788328682],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4d648ee3b0f08169977ee9cf3f76e38f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4d648ee3b0f08169977ee9cf3f76e38f.addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var circle_9294decd6f5e7202f0e49023368064e0 = L.circle(
+                [49.8915326908064, 10.886880788328682],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 103.63390000000001, "stroke": true, "weight": 3}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var marker_cc70df33012d60881485d2df5d2f8129 = L.marker(
+                [49.8915326908064, 10.886880788328682],
+                {
+}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var icon_eeea198eec471c61169a8fe9b0547db9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cc70df33012d60881485d2df5d2f8129.setIcon(icon_eeea198eec471c61169a8fe9b0547db9);
+        
+    
+        var popup_de06011ec071b652e81afc0d76e1ab0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f8d8f3c0523d421f94faac9c84eabc7 = $(`<div id="html_0f8d8f3c0523d421f94faac9c84eabc7" style="width: 100.0%; height: 100.0%;"><b>Gabelmann</b><br>Visitor Count: 1036339.0</div>`)[0];
+                popup_de06011ec071b652e81afc0d76e1ab0d.setContent(html_0f8d8f3c0523d421f94faac9c84eabc7);
+            
+        
+
+        marker_cc70df33012d60881485d2df5d2f8129.bindPopup(popup_de06011ec071b652e81afc0d76e1ab0d)
+        ;
+
+        
+    
+    
+            marker_cc70df33012d60881485d2df5d2f8129.bindTooltip(
+                `<div>
+                     Gabelmann (bz2452)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_a9552423d6516ee093ec0eb62a507bbc = L.circle(
+                [49.890902010804375, 10.882862587313937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.7096, "stroke": true, "weight": 3}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var marker_4c893bc9bbe2e08d4ae0bbbbb90cfbe8 = L.marker(
+                [49.890902010804375, 10.882862587313937],
+                {
+}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var icon_fc2ddc293054c09724dff2ef6dbb73a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4c893bc9bbe2e08d4ae0bbbbb90cfbe8.setIcon(icon_fc2ddc293054c09724dff2ef6dbb73a5);
+        
+    
+        var popup_b3b991cc066814e790d62bbe1297e38e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_709b4642d9008b3f074f4c7949d6795d = $(`<div id="html_709b4642d9008b3f074f4c7949d6795d" style="width: 100.0%; height: 100.0%;"><b>Sandstraße</b><br>Visitor Count: 117096.0</div>`)[0];
+                popup_b3b991cc066814e790d62bbe1297e38e.setContent(html_709b4642d9008b3f074f4c7949d6795d);
+            
+        
+
+        marker_4c893bc9bbe2e08d4ae0bbbbb90cfbe8.bindPopup(popup_b3b991cc066814e790d62bbe1297e38e)
+        ;
+
+        
+    
+    
+            marker_4c893bc9bbe2e08d4ae0bbbbb90cfbe8.bindTooltip(
+                `<div>
+                     Sandstraße (bz2453)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_aa2b20453b76a88fabfd86fcd6882020 = L.circle(
+                [49.89377824021776, 10.877295540783985],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.312, "stroke": true, "weight": 3}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var marker_6fceb0c76faa345838777e9c4e9facd1 = L.marker(
+                [49.89377824021776, 10.877295540783985],
+                {
+}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var icon_c4c4c1ffdfcbb1d02e0daf2391c02513 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6fceb0c76faa345838777e9c4e9facd1.setIcon(icon_c4c4c1ffdfcbb1d02e0daf2391c02513);
+        
+    
+        var popup_595b1a4acdad0d03f8686be008035d73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_afa127b50ac207d8e459093a109fff5e = $(`<div id="html_afa127b50ac207d8e459093a109fff5e" style="width: 100.0%; height: 100.0%;"><b>Mußstraße</b><br>Visitor Count: 63120.0</div>`)[0];
+                popup_595b1a4acdad0d03f8686be008035d73.setContent(html_afa127b50ac207d8e459093a109fff5e);
+            
+        
+
+        marker_6fceb0c76faa345838777e9c4e9facd1.bindPopup(popup_595b1a4acdad0d03f8686be008035d73)
+        ;
+
+        
+    
+    
+            marker_6fceb0c76faa345838777e9c4e9facd1.bindTooltip(
+                `<div>
+                     Mußstraße (bz2454)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_812674162296bd726e168a343e4a048e = L.circle(
+                [49.89352197587767, 10.882945771405465],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 65.8024, "stroke": true, "weight": 3}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var marker_a822a3f0212d01bb20d85ed0f7228556 = L.marker(
+                [49.89352197587767, 10.882945771405465],
+                {
+}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var icon_6a429d930aef908134079fa3a167a318 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a822a3f0212d01bb20d85ed0f7228556.setIcon(icon_6a429d930aef908134079fa3a167a318);
+        
+    
+        var popup_87c9ccf8a506e32145ce691f2cf1bdd8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0055d727469dee5607ccc7827da3672c = $(`<div id="html_0055d727469dee5607ccc7827da3672c" style="width: 100.0%; height: 100.0%;"><b>Domkranz</b><br>Visitor Count: 658024.0</div>`)[0];
+                popup_87c9ccf8a506e32145ce691f2cf1bdd8.setContent(html_0055d727469dee5607ccc7827da3672c);
+            
+        
+
+        marker_a822a3f0212d01bb20d85ed0f7228556.bindPopup(popup_87c9ccf8a506e32145ce691f2cf1bdd8)
+        ;
+
+        
+    
+    
+            marker_a822a3f0212d01bb20d85ed0f7228556.bindTooltip(
+                `<div>
+                     Domkranz (bz2457)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_a5ac6c405c3e0bacf5109426239603c7 = L.circle(
+                [49.88863950847202, 10.885894010763526],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 49.6325, "stroke": true, "weight": 3}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var marker_f08b436f63cb902fc3c2de60c2de28c4 = L.marker(
+                [49.88863950847202, 10.885894010763526],
+                {
+}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var icon_dfcd1d430980c87e4288308c763228fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f08b436f63cb902fc3c2de60c2de28c4.setIcon(icon_dfcd1d430980c87e4288308c763228fc);
+        
+    
+        var popup_1ba1b830879874bc194a7d408b092413 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e46601b369b567a707f88d7c5eb1fb8 = $(`<div id="html_2e46601b369b567a707f88d7c5eb1fb8" style="width: 100.0%; height: 100.0%;"><b>Touristeninformation</b><br>Visitor Count: 496325.0</div>`)[0];
+                popup_1ba1b830879874bc194a7d408b092413.setContent(html_2e46601b369b567a707f88d7c5eb1fb8);
+            
+        
+
+        marker_f08b436f63cb902fc3c2de60c2de28c4.bindPopup(popup_1ba1b830879874bc194a7d408b092413)
+        ;
+
+        
+    
+    
+            marker_f08b436f63cb902fc3c2de60c2de28c4.bindTooltip(
+                `<div>
+                     Touristeninformation (bz2458)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_99a080a89dea2dc273dc1a602f5d417c = L.circle(
+                [49.88081879723072, 10.868877325685178],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 51.726400000000005, "stroke": true, "weight": 3}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var marker_614f4d3341b5eafcc6014ecce3d7a61d = L.marker(
+                [49.88081879723072, 10.868877325685178],
+                {
+}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var icon_95e19a3d0ce3f485f70c562dfe51cbb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_614f4d3341b5eafcc6014ecce3d7a61d.setIcon(icon_95e19a3d0ce3f485f70c562dfe51cbb5);
+        
+    
+        var popup_342a159e0eaf7d30071cb54d728d1d51 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8e199808386ffb5a40478b7cb532540 = $(`<div id="html_e8e199808386ffb5a40478b7cb532540" style="width: 100.0%; height: 100.0%;"><b>Old Rathaus</b><br>Visitor Count: 517264.0</div>`)[0];
+                popup_342a159e0eaf7d30071cb54d728d1d51.setContent(html_e8e199808386ffb5a40478b7cb532540);
+            
+        
+
+        marker_614f4d3341b5eafcc6014ecce3d7a61d.bindPopup(popup_342a159e0eaf7d30071cb54d728d1d51)
+        ;
+
+        
+    
+    
+            marker_614f4d3341b5eafcc6014ecce3d7a61d.bindTooltip(
+                `<div>
+                     Old Rathaus (bz2460)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_c782aa81ef0fbf8a4a948ba679f19df9 = L.circle(
+                [49.89, 10.887],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39.2136, "stroke": true, "weight": 3}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var marker_135d1377f8139e9f7a1b65691e917e43 = L.marker(
+                [49.89, 10.887],
+                {
+}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var icon_603806da210199cb3e7a325d58de37c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_135d1377f8139e9f7a1b65691e917e43.setIcon(icon_603806da210199cb3e7a325d58de37c4);
+        
+    
+        var popup_3231a8c3f80403660687c6f923ff2f45 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea11c676861f3f8a8dcb3b6ffbef2718 = $(`<div id="html_ea11c676861f3f8a8dcb3b6ffbef2718" style="width: 100.0%; height: 100.0%;"><b>Maxplatz</b><br>Visitor Count: 392136.0</div>`)[0];
+                popup_3231a8c3f80403660687c6f923ff2f45.setContent(html_ea11c676861f3f8a8dcb3b6ffbef2718);
+            
+        
+
+        marker_135d1377f8139e9f7a1b65691e917e43.bindPopup(popup_3231a8c3f80403660687c6f923ff2f45)
+        ;
+
+        
+    
+    
+            marker_135d1377f8139e9f7a1b65691e917e43.bindTooltip(
+                `<div>
+                     Maxplatz (bz2464)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_936b00de3f2ea633784e2a79ec290972 = L.circle(
+                [49.889, 10.886],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8567, "stroke": true, "weight": 3}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var marker_00a388ebc32b41506ff906e3db9f26e2 = L.marker(
+                [49.889, 10.886],
+                {
+}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var icon_2335bc45b9eb2f597a56ac9a25a41298 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_00a388ebc32b41506ff906e3db9f26e2.setIcon(icon_2335bc45b9eb2f597a56ac9a25a41298);
+        
+    
+        var popup_50778dde1d24f9e60845f73e77f34651 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a0a06a2c215105ec636eb504a0c2221 = $(`<div id="html_0a0a06a2c215105ec636eb504a0c2221" style="width: 100.0%; height: 100.0%;"><b>New Rathaus West</b><br>Visitor Count: 58567.0</div>`)[0];
+                popup_50778dde1d24f9e60845f73e77f34651.setContent(html_0a0a06a2c215105ec636eb504a0c2221);
+            
+        
+
+        marker_00a388ebc32b41506ff906e3db9f26e2.bindPopup(popup_50778dde1d24f9e60845f73e77f34651)
+        ;
+
+        
+    
+    
+            marker_00a388ebc32b41506ff906e3db9f26e2.bindTooltip(
+                `<div>
+                     New Rathaus West (bz2463)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_e6348afd8b4c71ef97f3bfaf232d3788 = L.circle(
+                [49.888, 10.885],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2316, "stroke": true, "weight": 3}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var marker_0f39ec15de648453f1e8b7ad6253ee0e = L.marker(
+                [49.888, 10.885],
+                {
+}
+            ).addTo(map_aecaa950b2525848b4303c5951fd929b);
+        
+    
+            var icon_14e46a988188b13f3c2d110864d0285a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0f39ec15de648453f1e8b7ad6253ee0e.setIcon(icon_14e46a988188b13f3c2d110864d0285a);
+        
+    
+        var popup_c5aed007203492cf5ae749c08ba673fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05d31d5ac0c909250c81af629d03420f = $(`<div id="html_05d31d5ac0c909250c81af629d03420f" style="width: 100.0%; height: 100.0%;"><b>New Rathaus Ost</b><br>Visitor Count: 52316.0</div>`)[0];
+                popup_c5aed007203492cf5ae749c08ba673fa.setContent(html_05d31d5ac0c909250c81af629d03420f);
+            
+        
+
+        marker_0f39ec15de648453f1e8b7ad6253ee0e.bindPopup(popup_c5aed007203492cf5ae749c08ba673fa)
+        ;
+
+        
+    
+    
+            marker_0f39ec15de648453f1e8b7ad6253ee0e.bindTooltip(
+                `<div>
+                     New Rathaus Ost (bz2462)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
