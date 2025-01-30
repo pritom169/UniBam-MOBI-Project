@@ -96,9 +96,9 @@ def main():
     """
     Main function to define addresses and POI types, then save the collected POI data to a JSON file.
     """
-    addresses = ["Ob. Brücke", "Ludwig-Donau-Main-Kanal", "Mühlwörth", "Am Kranen", "Herrenstraße", 
+    addresses = ["Ob. Brücke", "gabelmann", "Domplatz", "Ludwig-Donau-Main-Kanal", "Mühlwörth", "Am Kranen", "Herrenstraße", 
                  "Am Leinritt", "Spinnerei", "Untere Mühlbrücke", "Dompl", "Altenburg Castle", "Maximilianspl", 
-                 "Michelsberg", "Ob. Mühlbrücke", "Schiffbauplatz", "Obere Sandstr", "Gertrauden Straße", 
+                 "Michelsberg", "Ob. Mühlbrücke", "Schiffbauplatz", "Mußstraße", "Gertrauden Straße", 
                  "Heiliggrabstraße", "Benediktinerweg", "Geyerswörthstraße", "Michaelsberg", "Judenstraße", 
                  "Schönleinsplatz", "Centurione I", "Obere Sandstraße", "Hans-Schütz-Straße", "Kunigundendamm",
                  "Schillerplatz", "Theuerstadt", "Pfahlplaetzchen", "Gruener Markt", "Hainstraße", "Heumarkt",
@@ -113,3 +113,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Mußstraße | bz2454 => "address": "Mu\u00dfstra\u00dfe",
+# sandstraße aka Obere Sandstraße | bz2453 => "address": "Obere Sandstra\u00dfe",
+#  gabelmann | bz2452 =>  "address": "gabelmann",
+# Domplatz | | bz2457 =>   "address": "Domplatz",
+#  Geyerswörthstraße aka tourist information | bz2458 => "address": "Geyersw\u00f6rthstra\u00dfe",
+# Ob. Brücke aka old rathuas | bz2460 =>  "address": "Ob. Br\u00fccke",
+# Maximilianspl aka maxplatz | bz2462, bz2463, bz2464 =>  "address": "Maximilianspl",
