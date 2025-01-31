@@ -1,0 +1,379 @@
+[
+    {
+        "street_name": "Brennerstra\u00dfe",
+        "nearby_pois": [
+            {
+                "name": "Bella Tandoori Express",
+                "type": "restaurant",
+                "lat": 49.8995663,
+                "lon": 10.8969351,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8994793,
+                "lon": 10.8969523,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "charging_station",
+                "lat": 49.898958,
+                "lon": 10.89633,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8993407,
+                "lon": 10.892731,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8991989,
+                "lon": 10.8964951,
+                "opening_hours": "24/7"
+            }
+        ]
+    },
+    {
+        "street_name": "Ludwigstra\u00dfe",
+        "nearby_pois": [
+            {
+                "name": "Bella Tandoori Express",
+                "type": "restaurant",
+                "lat": 49.8995663,
+                "lon": 10.8969351,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Hong Kong Sushi Bar",
+                "type": "restaurant",
+                "lat": 49.898704,
+                "lon": 10.8961112,
+                "opening_hours": "Mo-Fr 11:00-14:00,17:00-22:00; PH,Sa,Su 16:00-22:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8994793,
+                "lon": 10.8969523,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8983226,
+                "lon": 10.895196,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8987273,
+                "lon": 10.8959904,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "charging_station",
+                "lat": 49.898958,
+                "lon": 10.89633,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8993407,
+                "lon": 10.892731,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8991989,
+                "lon": 10.8964951,
+                "opening_hours": "24/7"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8986455,
+                "lon": 10.8958666,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Arabesque",
+                "type": "cafe",
+                "lat": 49.8972077,
+                "lon": 10.8942001,
+                "opening_hours": "Mo-Su 09:00-22:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "atm",
+                "lat": 49.8973492,
+                "lon": 10.8942056,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8977446,
+                "lon": 10.8943952,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8979365,
+                "lon": 10.8945309,
+                "opening_hours": "Not available"
+            }
+        ]
+    },
+    {
+        "street_name": "Feldkirchenstra\u00dfe",
+        "nearby_pois": []
+    },
+    {
+        "street_name": "Memmelsdorfer Stra\u00dfe",
+        "nearby_pois": [
+            {
+                "name": "Bella Tandoori Express",
+                "type": "restaurant",
+                "lat": 49.8995663,
+                "lon": 10.8969351,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Hong Kong Sushi Bar",
+                "type": "restaurant",
+                "lat": 49.898704,
+                "lon": 10.8961112,
+                "opening_hours": "Mo-Fr 11:00-14:00,17:00-22:00; PH,Sa,Su 16:00-22:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8994793,
+                "lon": 10.8969523,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8983226,
+                "lon": 10.895196,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8987273,
+                "lon": 10.8959904,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "charging_station",
+                "lat": 49.898958,
+                "lon": 10.89633,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8993407,
+                "lon": 10.892731,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8991989,
+                "lon": 10.8964951,
+                "opening_hours": "24/7"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8986455,
+                "lon": 10.8958666,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Arabesque",
+                "type": "cafe",
+                "lat": 49.8972077,
+                "lon": 10.8942001,
+                "opening_hours": "Mo-Su 09:00-22:00"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "atm",
+                "lat": 49.8973492,
+                "lon": 10.8942056,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8977446,
+                "lon": 10.8943952,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8979365,
+                "lon": 10.8945309,
+                "opening_hours": "Not available"
+            }
+        ]
+    },
+    {
+        "street_name": "Siechenstra\u00dfe",
+        "nearby_pois": [
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8983226,
+                "lon": 10.895196,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8987273,
+                "lon": 10.8959904,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8993407,
+                "lon": 10.892731,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8991989,
+                "lon": 10.8964951,
+                "opening_hours": "24/7"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8986455,
+                "lon": 10.8958666,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8977446,
+                "lon": 10.8943952,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8979365,
+                "lon": 10.8945309,
+                "opening_hours": "Not available"
+            }
+        ]
+    },
+    {
+        "street_name": "Lichtenhaidestra\u00dfe",
+        "nearby_pois": [
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8983226,
+                "lon": 10.895196,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8987273,
+                "lon": 10.8959904,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8993407,
+                "lon": 10.892731,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8991989,
+                "lon": 10.8964951,
+                "opening_hours": "24/7"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8986455,
+                "lon": 10.8958666,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8977446,
+                "lon": 10.8943952,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8979365,
+                "lon": 10.8945309,
+                "opening_hours": "Not available"
+            }
+        ]
+    },
+    {
+        "street_name": "Margaretendamm",
+        "nearby_pois": [
+            {
+                "name": "Unnamed POI",
+                "type": "parking",
+                "lat": 49.8983226,
+                "lon": 10.895196,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8993407,
+                "lon": 10.892731,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8977446,
+                "lon": 10.8943952,
+                "opening_hours": "Not available"
+            },
+            {
+                "name": "Unnamed POI",
+                "type": "bicycle_parking",
+                "lat": 49.8979365,
+                "lon": 10.8945309,
+                "opening_hours": "Not available"
+            }
+        ]
+    }
+]

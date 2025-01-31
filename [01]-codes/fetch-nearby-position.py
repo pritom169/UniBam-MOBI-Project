@@ -79,7 +79,7 @@ def analyze_proximity(street_data, poi_data):
 def main():
     try:
         # Read street data
-        with open('2024-12-09-09-00-14.json', 'r', encoding='utf-8') as f:
+        with open('2024-12-09-09-00-00.json', 'r', encoding='utf-8') as f:
             street_data = json.load(f)
 
         # Read POI data
