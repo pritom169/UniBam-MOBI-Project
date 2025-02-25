@@ -1,6 +1,6 @@
 import folium
 
-def display_bamberg_circle_map(locations, filename="bamberg_map_with_markers.html"):
+def display_bamberg_circle_map(locations, filename="bamberg_top_location.html"):
     """
     Display Bamberg locations with 500-meter radius circles and labeled markers on an interactive map.
     """
