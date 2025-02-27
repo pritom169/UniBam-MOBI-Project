@@ -1,4 +1,4 @@
-# Traffic Jam Factor Prediction System
+# Modelling Traffic Patterns in Bamberg
 
 A neural network-based system to predict traffic congestion (`jamFactor`) using weather, time, and street data. This project merges JSON files containing historical traffic and weather data, trains a neural network, and allows predictions for specific conditions.
 
@@ -169,7 +169,7 @@ Predicted jamFactor
 
 ## Making Predictions
 
-### Using the `train-and-test.ipnyb` Script
+### Using the `train-and-test.ipynb` Script
 ```python
 from predict import predict_jam_factor
 
