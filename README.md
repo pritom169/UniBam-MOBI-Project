@@ -57,9 +57,8 @@ Predict the `jamFactor` (a metric indicating traffic congestion severity) using:
    *(requirements includes: `numpy`, `pandas`, `scikit-learn`, `tensorflow`, `joblib`)*
 
 3. Ensure the following files are present:
-   - `merged_output.json`: Merged traffic/weather data (generated from raw JSON files).
-   - `train_model.py`: Script to train the neural network.
-   - `predict.py`: Script to make predictions.
+   - [merged_output.json](https://github.com/pritom169/UniBam-MOBI-Project/blob/dev-pritom/%5B07%5D-traffic-and-weather-data/%5B02%5D-merged-data/merged_output.json): Merged traffic/weather data (generated from raw JSON files). It can
+   - [train-and-test.ipnyb](https://github.com/pritom169/UniBam-MOBI-Project/blob/dev-pritom/%5B01%5D-codes/train-and-test.ipynb): Script to train the neural network and also for testing
 
 ---
 
@@ -117,7 +116,33 @@ Sequential(
 - **Loss Function**: Mean Squared Error (MSE).
 - **Optimizer**: Adam (learning rate = 0.001).
 
+Here is a visual representation of the model
+```
+Input Layer (Features)
+       |
+       v
++-------------------+
+| Hidden Layer 1    |
+| 64 neurons, ReLU  |
++-------------------+
+       |
+       v
++-------------------+
+| Hidden Layer 2    |
+| 32 neurons, ReLU  |
++-------------------+
+       |
+       v
++-------------------+
+| Output Layer      |
+| 1 neuron, Linear  |
++-------------------+
+       |
+       v
+Predicted jamFactor
+
 ---
+```
 
 ## Training the Model
 
@@ -144,7 +169,7 @@ Sequential(
 
 ## Making Predictions
 
-### Using the `predict.py` Script
+### Using the `train-and-test.ipnyb` Script
 ```python
 from predict import predict_jam_factor
 
