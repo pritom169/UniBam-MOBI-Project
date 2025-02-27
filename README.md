@@ -215,10 +215,11 @@ print(f"Predicted Jam Factor: {jam_factor:.2f}")
    plt.scatter(y_test, y_pred)
    plt.plot([min_val, max_val], [min_val, max_val], 'r--')
    ```
+   ![Actual vs Predicted]([08]-results/[00]_actual_vs_predicted.png)
 2. **Residual Plot**:
    ```python
    plt.scatter(y_pred, residuals)
    plt.axhline(0, color='red')
    ```
-
+   ![Residual Plot]([08]-results/[01]_residual_vs_predicted.png)
 ---
