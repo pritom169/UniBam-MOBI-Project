@@ -1,66 +1,182 @@
-# Visitor Traffic and Weather Correlation Analysis
+# Modelling Traffic Patterns in Bamberg
 
-## 📌 Overview
-This project analyzes the correlation between **visitor traffic** and **weather conditions** in Bamberg, Germany. It aggregates visitor data across multiple zones and merges it with weather data (temperature, precipitation, and wind speed) to explore potential relationships.
+A regression-based system to predict traffic congestion (`jamFactor`) using weather, time, and street data. This project processes JSON files containing historical traffic and weather data, trains a **Ridge Regression (L2 Regularization)** model, and allows predictions for specific conditions.
 
-## 🚀 How to Run the Analysis
-### 1️⃣ Install Required Libraries
-Make sure you have Python installed. Then, install the necessary dependencies:
-```bash
-pip install pandas seaborn matplotlib
+---
+
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Installation](#installation)
+3. [Data Preparation](#data-preparation)
+4. [Model Training](#model-training)
+5. [Making Predictions](#making-predictions)
+6. [Evaluation Metrics](#evaluation-metrics)
+7. [Visualization](#visualization)
+
+---
+
+## Project Overview
+
+### Objective
+
+Predict the `jamFactor` (a metric indicating traffic congestion severity) using:
+
+- **Day Type**: Weekday or weekend.
+- **Time Slots**: 09:00, 12:00, 15:00, 18:00, 21:00.
+- **Street**: Different locations in Bamberg.
+- **Weather**: Temperature (°C).
+- **Traffic Speed**: Average vehicle speed (km/h).
+- **Nearby POIs**: Number of Points of Interest within 650m.
+
+### Workflow
+
+1. **Data Merging**: JSON files are merged into a structured dataset.
+2. **Preprocessing**: Encoding categorical features, handling missing values, and splitting datasets.
+3. **Model Training**: Using **Ridge Regression** to predict `jamFactor`.
+4. **Prediction**: Using the trained model for new data.
+5. **Evaluation**: Using RMSE and MAE to assess model performance.
+6. **Visualization**: Generating plots for **SHAP feature importance** and model accuracy.
+
+---
+
+## Installation
+
+### Prerequisites
+
+- Python 3.8+
+- pip package manager
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/dev-shakil/traffic-modelling.git
+   cd traffic-modelling
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install numpy pandas scikit-learn shap matplotlib
+   ```
+
+3. Ensure the following directories exist:
+
+   - `[07]-traffic-and-weather-data/` (Contains JSON files for weekdays and weekends.)
+   - `visual/` (Stores generated plots for analysis.)
+
+---
+
+## Data Preparation
+
+### 1. Loading JSON Files
+
+The dataset consists of separate JSON files for:
+
+- **Weekdays**: `merged_traffic_and_weather_9.json`, `merged_traffic_and_weather_12.json`, etc.
+- **Weekends**: `merged_traffic_and_weather_weekend_9.json`, `merged_traffic_and_weather_weekend_12.json`, etc.
+
+### 2. Feature Engineering
+
+- **Categorical Features**:
+  - `day_of_week`: Encoded as an integer (0 = Monday, 6 = Sunday).
+  - `is_weekend`: Binary feature (0 = weekday, 1 = weekend).
+- **Numerical Features**:
+  - `speed`, `temperature`, `number_of_nearby_pois`.
+
+### 3. Train-Test Split
+
+- **Training Data**: 60% of the dataset.
+- **Testing Data**: 40% of the dataset.
+
+---
+
+## Model Training
+
+### Ridge Regression (L2 Regularization)
+
+```python
+from sklearn.linear_model import Ridge
+ridge_model = Ridge(alpha=1.0)  # Regularization strength
+ridge_model.fit(train_weekday[features], train_weekday[target])
 ```
 
-### 2️⃣ Run the Python Script
-Navigate to the script directory and execute the following command:
-```bash
-python correlation_visitor_temperature.py
+### Training Process
+
+1. Train **Ridge Regression** model on training data.
+2. Predict `jamFactor` on test data.
+3. Evaluate using RMSE and MAE.
+
+---
+
+## Making Predictions
+
+Use the trained Ridge Regression model to predict traffic congestion.
+
+```python
+new_data = pd.DataFrame({
+    "speed": [25],
+    "temperature": [12.5],
+    "number_of_nearby_pois": [5],
+    "day_of_week": [2],
+    "is_weekend": [0]
+})
+
+predicted_jamFactor = ridge_model.predict(new_data)
+print(f"Predicted jamFactor: {predicted_jamFactor[0]:.2f}")
 ```
 
-### 3️⃣ Check the Output
-- The **correlation heatmap** and **scatter plots** will be saved in:
-  ```
-  D:\Bamberg University\winter24_25\project\UniBam-MOBI-Project\figures\
-  ```
-- The **correlation matrix** will be printed in the console.
+---
 
-## 📊 Understanding the Heatmap
+## Evaluation Metrics
 
-The **heatmap** visualizes the correlation between **visitor traffic** and **weather conditions** using **Pearson correlation coefficients**.
+### 1. Root Mean Squared Error (RMSE)
 
-### 🔍 What Does the Heatmap Represent?
-- Each **cell** shows the **correlation coefficient** between two variables.
-- The **color intensity** represents the strength of the relationship:
-  - 🔴 **Red (Positive Correlation)** → When one variable increases, the other also increases.
-  - 🔵 **Blue (Negative Correlation)** → When one variable increases, the other decreases.
-  - ⚪ **White / Neutral (0 Correlation)** → No strong relationship.
+```python
+rmse = np.sqrt(mean_squared_error(y_true, y_pred))
+```
 
-### 🔢 How to Interpret Correlation Values?
-| **Correlation Value** | **Interpretation** |
-|-----------------|----------------------|
-| **+1.00** | Perfect Positive Correlation (Both variables increase together) |
-| **0.50 to 0.99** | Strong Positive Correlation |
-| **0.10 to 0.49** | Weak Positive Correlation |
-| **0.00** | No Correlation |
-| **-0.10 to -0.49** | Weak Negative Correlation |
-| **-0.50 to -0.99** | Strong Negative Correlation |
-| **-1.00** | Perfect Negative Correlation (One increases, the other decreases) |
+Measures how far the predictions deviate from actual values.
 
-### 📌 Example Interpretation from the Heatmap
-| **Variable 1** | **Variable 2** | **Correlation** | **Meaning** |
-|--------------|--------------|--------------|----------------|
-| **Total Visitors** | **Max Temperature (°C)** | **0.70** | Strong positive correlation: More visitors on warmer days. |
-| **Total Visitors** | **Precipitation (mm)** | **-0.50** | Moderate negative correlation: Rainy days lead to fewer visitors. |
-| **Total Visitors** | **Max Wind Speed (m/s)** | **-0.30** | Weak negative correlation: High winds slightly reduce visitors. |
+### 2. Mean Absolute Error (MAE)
 
-### 📊 Key Takeaways
-- **Higher temperatures** may **increase** visitor traffic.
-- **Rainy days** tend to **reduce** visitors.
-- **Wind speed** has a **minor effect** on visitor numbers.
+```python
+mae = mean_absolute_error(y_true, y_pred)
+```
 
-## 📂 Output Files
-After running the script, the following plots will be saved in `figures/`:
-- `correlation_heatmap.png` → Correlation heatmap
-- `visitor_vs_temperature.png` → Visitors vs. Temperature
-- `visitor_vs_wind_speed.png` → Visitors vs. Wind Speed
+Gives the average absolute error in prediction.
 
+---
+
+## Visualization
+
+### 1. Actual vs. Predicted jamFactor
+
+```python
+plt.scatter(y_actual, y_predicted, color='blue', alpha=0.5)
+plt.plot([min(y_actual), max(y_actual)], [min(y_actual), max(y_actual)], 'r--')
+plt.xlabel("Actual jamFactor")
+plt.ylabel("Predicted jamFactor")
+plt.title("Actual vs. Predicted jamFactor")
+plt.savefig("visual/actual_vs_predicted.png")
+```
+
+### 2. SHAP Feature Importance
+
+```python
+explainer = shap.Explainer(ridge_model, train_weekday[features])
+shap_values = explainer(train_weekday[features])
+shap.summary_plot(shap_values, train_weekday[features])
+plt.savefig("visual/shap_summary.png")
+```
+
+---
+
+## Future Improvements
+
+✅ **Try Lasso Regression for feature selection.** ✅ **Use Deep Learning Approaches for complex relationships.** ✅ **Integrate Real-Time Traffic Data for live predictions.**
+
+---
 
