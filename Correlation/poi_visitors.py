@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 
-with open("poi_data.json", "r", encoding="utf-8") as f:
+with open("data/poi_data.json", "r", encoding="utf-8") as f:
     poi_data = json.load(f)
 
 zone_poi_counts = {}
@@ -26,14 +26,9 @@ for zone_code, address in zone_address_mapping.items():
 print("POI Counts per Zone:", zone_poi_counts)
 
 # Step 2: Read the data as CSV after skipping headers
-visitor_data = pd.read_csv("mobithek_data_with_rssi_60min.xls", sep=";", skiprows=3)
+visitor_data = pd.read_csv("data/mobithek_data_with_rssi_60min.xls", sep=";", skiprows=3)
 
-# Print the first few rows to understand the structure
-# print("First few rows of visitor data:")
-# print(visitor_data.head())
 
-# Print columns to see if there are any potential zone-related columns
-# print("Visitor Data Columns:", visitor_data.columns)
 
 # Step 3: Identify visitor data columns corresponding to the zones (wide, mid, close)
 zone_visitor_counts = {}

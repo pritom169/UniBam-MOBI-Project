@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 # Step 1: Count POIs by Type for Each Zone
-with open("poi_data.json", "r", encoding="utf-8") as f:
+with open("data/poi_data.json", "r", encoding="utf-8") as f:
     poi_data = json.load(f)
 
 zone_poi_counts = {}
@@ -32,10 +32,8 @@ for zone, types in zone_poi_types.items():
     print(f"{zone}: {types}")
 
 # Step 2: Read visitor data as a CSV after skipping headers
-visitor_data = pd.read_csv("mobithek_data_with_rssi_60min.xls", sep=";", skiprows=3)
+visitor_data = pd.read_csv("data/mobithek_data_with_rssi_60min.xls", sep=";", skiprows=3)
 
-# Print columns to identify zone-related data
-# print("Visitor Data Columns:", visitor_data.columns)
 
 # Step 3: Identify visitor data columns corresponding to zones (wide, mid, close)
 zone_visitor_counts = {}
@@ -86,7 +84,6 @@ for poi_type in all_poi_types:
     else:
         poi_correlations[poi_type] = None
 
-# Print results
 print("\nCorrelations between POI types and visitor counts:")
 for poi_type, correlation in poi_correlations.items():
     print(f"{poi_type}: {correlation}")

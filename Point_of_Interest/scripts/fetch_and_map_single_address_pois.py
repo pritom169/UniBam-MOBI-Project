@@ -160,6 +160,8 @@ def create_map_with_grouped_pois(address, grouped_pois):
 
 def main():
     address = "Ob. Brücke, Bamberg, Bavaria"
+
+
     grouped_pois = {
         "Food & Drinks": ["cafe", "restaurant", "bakery", "food"],
         "Essential Services": ["atm", "pharmacy", "fuel", "clinic"],
@@ -167,6 +169,7 @@ def main():
         "Parking & Transport": ["parking", "motorcycle_parking", "bicycle_parking", "charging_station"],
         "Education & Knowledge": ["university", "school", "library"]
     }
+
 
     create_map_with_grouped_pois(address, grouped_pois)
 
