@@ -197,6 +197,6 @@ def save_shap_summary_plot(explainer, data, title, filename):
     plt.title(title)
     plt.savefig(os.path.join(VISUAL_DIR, filename), bbox_inches='tight')
 ```
-![Shap](./modeling/visual/combined_shap_summery.png) 
+   ![Shap](./modeling/visual/combined_shap_summery.png) 
 ---
 
