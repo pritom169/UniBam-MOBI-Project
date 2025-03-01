@@ -25,12 +25,23 @@ Predict the `jamFactor` (a metric indicating traffic congestion severity) using:
 - **Speed**: Average vehicle speed (km/h).
 
 ### Workflow
+### Neural Network
 1. **Data Merging**: Combine multiple JSON files into a structured dataset.
 2. **Preprocessing**: Encode categorical features and scale numerical data.
 3. **Model Training**: Train a neural network to predict `jamFactor`.
 4. **Prediction**: Use the trained model to predict congestion for new inputs.
 5. **Evaluation**: Quantify model performance using regression metrics.
 
+### Ensemble
+1. **Data Merging**: Load and merge multiple JSON files containing traffic and weather data from weekdays and weekends, including features like number of nearby POIs, speed, and temperature.
+2. **Feature Engineering**: Extract time-based features such as hour and weekday. Aggregate data by averaging speed and jamFactor for each combination of features.
+3. **Preprocessing**: Handle missing values with mean imputation and apply One-Hot Encoding to the `street_name` column.
+4. **Model Training**: Train ensemble models to predict traffic congestion (`jamFactor`):
+   - **RandomForestRegressor**
+   - **XGBRegressor** (XGBoost)
+   - **GradientBoostingRegressor**
+5. **Evaluation**: Evaluate model performance using K-fold cross-validation with metrics like **Mean Absolute Error (MAE)** and **R² score**, and visualize results using scatter and residual plots.
+6. **Prediction**: Use the trained models to predict traffic congestion for new inputs such as street, POIs, time, weather, and speed.
 ---
 
 ## Installation
@@ -38,6 +49,7 @@ Predict the `jamFactor` (a metric indicating traffic congestion severity) using:
 ### Prerequisites
 - Python 3.8+
 - pip package manager
+
 
 ### Steps
 1. Clone the repository:
@@ -91,6 +103,7 @@ Raw JSON files are merged into `merged_output.json`, which structures data as:
   - **Day Type**: Binary-encoded (`weekdays` → `0`, `weekends` → `1`).
 
 - **Numerical Scaling**:
+  - **Number of Nearby POIs**: Represents the count of nearby points of interest.
   - `temperature` and `speed` are standardized using `StandardScaler`.
 
 ### 3. Feature Combination
@@ -144,9 +157,22 @@ Predicted jamFactor
 ---
 ```
 
+### Machine Learning Models
+The following ensemble models are used to predict **Jam Factor**:
+
+```python
+models = {
+    "RandomForest": RandomForestRegressor(n_estimators=100, random_state=42),
+    "XGBoost": XGBRegressor(n_estimators=100, random_state=42),
+    "GradientBoosting": GradientBoostingRegressor(n_estimators=100, random_state=42),
+}
+```
+
+--- 
+
 ## Training the Model
 
-### Steps
+### Neural Network Steps
 1. Run the training script:
    ```bash
    python train_model.py
@@ -155,6 +181,24 @@ Predicted jamFactor
 2. **Output**:
    - Trained model: `jam_factor_predictor.keras`
    - Preprocessing tools: `street_encoder.joblib`, `time_encoder.joblib`, `scaler.joblib`
+
+### K-Fold Cross-Validation steps
+
+To evaluate model performance, **5-Fold Cross-Validation** is used. This technique splits the dataset into five equal-sized folds, where:
+
+- The model is trained on **4 folds** and tested on **1 fold**.
+- This process repeats **5 times**, ensuring that each fold serves as a test set once.
+- The results from all folds are averaged to provide a more reliable performance estimate.
+```python
+from sklearn.model_selection import KFold
+
+# Define K-Fold Cross-Validation (5 Folds)
+kf = KFold(n_splits=5, shuffle=True, random_state=42)
+
+```
+ 
+
+---
 
 ### Training Process
 - **Epochs**: 50
@@ -184,18 +228,44 @@ jam_factor = predict_jam_factor(
 print(f"Predicted Jam Factor: {jam_factor:.2f}")
 ```
 
+### Using the `model_training_and_analysis.py` Script
+```python
+# Prediction with GradientBoosting model
+selected_model = models["GradientBoosting"] 
+
+predicted_jam_factor = predict_jam_factor(
+    street="Feldkirchenstraße", 
+    number_of_nearby_pois=5,
+    hour=9,
+    weekday=2,  # Tuesday
+    is_weekend=0,
+    temperature=5.0,
+    speed=10.0,
+    model=selected_model
+)
+
+print(f"Predicted Jam Factor is: {predicted_jam_factor:.2f}")
+```
+
 ### Prediction Workflow
+#### Neural Network
 1. **Encode Street**: Convert street name to one-hot vector.
 2. **Encode Day Type**: Convert to `0` (weekday) or `1` (weekend).
 3. **Encode Time**: Convert time slot to one-hot vector.
 4. **Scale Features**: Normalize `temperature` and `speed`.
 5. **Predict**: Feed combined features to the neural network.
 
+#### Ensemble
+1. **Encode Street**: Convert street name using one-hot encoding.
+2. **Encode Day Type**: Convert to `0` (weekday) or `1` (weekend).
+3. **Encode Time**: Use `hour` and `weekday` as input features.
+4. **Scale Features**: Handle missing values using `SimpleImputer`.
+5. **Predict**: Feed the processed features into the selected  model (`RandomForestRegressor`, `XGBRegressor`, or `GradientBoostingRegressor`) to estimate the `jamFactor`.
+
+
 ---
 
 ## Evaluation Metrics
-
-### Metrics
 1. **Mean Absolute Error (MAE)**: 
    ```python
    mae = mean_absolute_error(y_true, y_pred)
@@ -208,8 +278,13 @@ print(f"Predicted Jam Factor: {jam_factor:.2f}")
    ```python
    rmse = np.sqrt(mse)
    ```
+4. **R² Score (Coefficient of Determination)**: Indicates how well the model explains the variance in the target variable.
+   ```python
+   mse = mean_squared_error(y_true, y_pred)
+   ```
 
 ### Visualization
+#### Neural Network
 1. **Actual vs Predicted Plot**:
    ```python
    plt.scatter(y_test, y_pred)
@@ -223,3 +298,19 @@ print(f"Predicted Jam Factor: {jam_factor:.2f}")
    ```
    ![Residual Plot]([08]-results/[01]_residual_vs_predicted.png)
 ---
+
+#### Ensemble
+1. **Actual vs Predicted Plot**:
+   ```python
+   sns.scatterplot(x=y, y=y_pred, alpha=0.6, color="blue", label="Predicted vs Actual")
+
+   plt.plot([y.min(), y.max()], [y.min(), y.max()], color="red", linestyle="--", label="Perfect Prediction Line")
+   ```
+   ![Actual vs Predicted]([09]-visuals/model_output_visuals/gradient_boosting_actual_vs_predicted_jamfactor.png)
+2. **Residual Plot**:
+   ```python
+   sns.scatterplot(x=y_pred, y=residuals, alpha=0.6, color="green", label="Residuals vs Predicted")
+
+   plt.axhline(y=0, color="red", linestyle="--", label="Zero Residuals Line")
+   ```
+   ![Residual Plot]([09]-visuals/model_output_visuals/gradient_boosting_residuals_vs_predicted_jamfactor.png)
