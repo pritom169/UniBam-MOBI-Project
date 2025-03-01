@@ -188,15 +188,3 @@ plt.savefig(os.path.join(VISUAL_DIR, "residuals_plot.png"))
 ```
 ![Residuals Plot](./modeling/visual/residuals_plot.png)
 
-### 3. SHAP Feature Importance
-
-```python
-def save_shap_summary_plot(explainer, data, title, filename):
-    shap_values = explainer(data)
-    shap.summary_plot(shap_values, data, show=False)
-    plt.title(title)
-    plt.savefig(os.path.join(VISUAL_DIR, filename), bbox_inches='tight')
-```
-
----
-![Shap](./modeling/visual/combined_shap_summery.png) 
