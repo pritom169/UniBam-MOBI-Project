@@ -396,4 +396,4 @@ plt.ylabel("Residuals")
 plt.title("Residuals vs Predicted Values")
 plt.savefig(os.path.join(VISUAL_DIR, "[05]-residuals_plot.png"))
 ```
-![Residuals Plot]([09]-visuals/visual/residuals_plot.png)
+![Residuals Plot]([08]-results/[02]-linear-regression-visuals/[05]-residuals_plot.png)
