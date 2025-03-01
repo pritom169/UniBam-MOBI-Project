@@ -1,7 +1,10 @@
 # Modelling Traffic Patterns in Bamberg
 
-A neural network-based system to predict traffic congestion (`jamFactor`) using weather, time, and street data. This project merges JSON files containing historical traffic and weather data, trains a neural network, and allows predictions for specific conditions.
-
+This project implements three approaches to predict traffic congestion (jamFactor) using shared core data: 
+historical weather, time, street data, and points of interest (POI) from JSON files. A linear regression model 
+provides baseline predictions, a neural network leverages deep learning for complex pattern recognition, and 
+the ensemble method (RandomForest, XGBoost, GradientBoosting) enhances the independence of the predictions by 
+leveraging different input features. All systems utilize the same foundational datasets.
 ---
 
 ## Table of Contents
@@ -42,6 +45,14 @@ Predict the `jamFactor` (a metric indicating traffic congestion severity) using:
    - **GradientBoostingRegressor**
 5. **Evaluation**: Evaluate model performance using K-fold cross-validation with metrics like **Mean Absolute Error (MAE)** and **R² score**, and visualize results using scatter and residual plots.
 6. **Prediction**: Use the trained models to predict traffic congestion for new inputs such as street, POIs, time, weather, and speed.
+
+### Linear Regression
+1. **Data Merging**: JSON files are merged into a structured dataset.
+2. **Preprocessing**: Encoding categorical features, handling missing values, and splitting datasets.
+3. **Model Training**: Using **Ridge Regression** to predict `jamFactor`.
+4. **Prediction**: Using the trained model for new data.
+5. **Evaluation**: Using RMSE and MAE to assess model performance.
+6. **Visualization**: Generating plots for **SHAP feature importance** and model accuracy.
 ---
 
 ## Installation
@@ -157,7 +168,7 @@ Predicted jamFactor
 ---
 ```
 
-### Machine Learning Models
+### Ensemble Design
 The following ensemble models are used to predict **Jam Factor**:
 
 ```python
@@ -196,11 +207,20 @@ from sklearn.model_selection import KFold
 kf = KFold(n_splits=5, shuffle=True, random_state=42)
 
 ```
- 
 
+### Linear Regression
+
+```python
+from sklearn.linear_model import LinearRegression
+
+# Train Model
+lr = LinearRegression()
+lr.fit(train[features], train[target])
+```
 ---
 
 ### Training Process
+#### Neural Network
 - **Epochs**: 50
 - **Batch Size**: 32
 - **Validation Split**: 20% of training data
@@ -209,11 +229,21 @@ kf = KFold(n_splits=5, shuffle=True, random_state=42)
   - Validation Loss (MSE)
   - Mean Absolute Error (MAE)
 
+#### Ensemble
+- The model is trained on **4 folds** and tested on **1 fold**.
+- This process repeats **5 times**, ensuring that each fold serves as a test set once.
+- The results from all folds are averaged to provide a more reliable performance estimate.
+
+
+#### Linear Regression
+1. Train **Ridge Regression** model on training data.
+2. Predict `jamFactor` on test data.
+3. Evaluate using RMSE and MAE.
 ---
 
 ## Making Predictions
 
-### Using the `train-and-test.ipynb` Script
+### Using the `train-and-test.ipynb` Script for Neural Network
 ```python
 from predict import predict_jam_factor
 
@@ -228,7 +258,7 @@ jam_factor = predict_jam_factor(
 print(f"Predicted Jam Factor: {jam_factor:.2f}")
 ```
 
-### Using the `model_training_and_analysis.py` Script
+### Using the `model_training_and_analysis.py` Script for Ensemble
 ```python
 # Prediction with GradientBoosting model
 selected_model = models["GradientBoosting"] 
@@ -247,6 +277,21 @@ predicted_jam_factor = predict_jam_factor(
 print(f"Predicted Jam Factor is: {predicted_jam_factor:.2f}")
 ```
 
+### Use the trained Linear Regression model to predict traffic congestion.
+
+```python
+new_data = pd.DataFrame({
+    "speed": [25],
+    "temperature": [12.5],
+    "number_of_nearby_pois": [5],
+    "day_of_week": [2],
+    "is_weekend": [0]
+})
+
+predicted_jamFactor = ridge_model.predict(new_data)
+print(f"Predicted jamFactor: {predicted_jamFactor[0]:.2f}")
+```
+
 ### Prediction Workflow
 #### Neural Network
 1. **Encode Street**: Convert street name to one-hot vector.
@@ -261,6 +306,14 @@ print(f"Predicted Jam Factor is: {predicted_jam_factor:.2f}")
 3. **Encode Time**: Use `hour` and `weekday` as input features.
 4. **Scale Features**: Handle missing values using `SimpleImputer`.
 5. **Predict**: Feed the processed features into the selected  model (`RandomForestRegressor`, `XGBRegressor`, or `GradientBoostingRegressor`) to estimate the `jamFactor`.
+
+#### Linear Regression
+1. **Data Merging**: JSON files are merged into a structured dataset.
+2. **Preprocessing**: Encoding categorical features, handling missing values, and splitting datasets.
+3. **Model Training**: Using **Ridge Regression** to predict `jamFactor`.
+4. **Prediction**: Using the trained model for new data.
+5. **Evaluation**: Using RMSE and MAE to assess model performance.
+6. **Visualization**: Generating plots for **SHAP feature importance** and model accuracy.
 
 
 ---
@@ -314,3 +367,33 @@ print(f"Predicted Jam Factor is: {predicted_jam_factor:.2f}")
    plt.axhline(y=0, color="red", linestyle="--", label="Zero Residuals Line")
    ```
    ![Residual Plot]([09]-visuals/model_output_visuals/gradient_boosting_residuals_vs_predicted_jamfactor.png)
+
+#### Linear Regression
+### 1. Actual vs. Predicted jamFactor
+
+```python
+plt.figure(figsize=(8, 6))
+    plt.scatter(actual, predicted, alpha=0.5, color="blue", label="Predictions")
+    plt.plot([min(actual), max(actual)], [min(actual), max(actual)], linestyle="--", color="red",
+             label="Perfect Fit (y=x)")
+    plt.xlabel("Actual jamFactor")
+    plt.ylabel("Predicted jamFactor")
+    plt.title(title)
+    plt.legend()
+    plt.savefig(os.path.join(VISUAL_DIR, filename))
+```
+![Model Predictions]([09]-visuals/visual/combined_actual_vs_predicted.png)
+
+### 2.Residuals Plot
+
+```python
+residuals = test[target] - pred
+plt.figure(figsize=(8, 6))
+plt.scatter(pred, residuals, alpha=0.5)
+plt.axhline(y=0, color='r', linestyle='--')
+plt.xlabel("Predicted Values")
+plt.ylabel("Residuals")
+plt.title("Residuals vs Predicted Values")
+plt.savefig(os.path.join(VISUAL_DIR, "residuals_plot.png"))
+```
+![Residuals Plot]([09]-visuals/visual/residuals_plot.png)
