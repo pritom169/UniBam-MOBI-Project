@@ -172,7 +172,7 @@ plt.figure(figsize=(8, 6))
     plt.legend()
     plt.savefig(os.path.join(VISUAL_DIR, filename))
 ```
-![Model Predictions](visual/combined_actual_vs_predictted.png)
+![Model Predictions](./modeling/visual/combined_actual_vs_predicted.png)
 
 ### 2.Residuals Plot
 
@@ -186,7 +186,7 @@ plt.ylabel("Residuals")
 plt.title("Residuals vs Predicted Values")
 plt.savefig(os.path.join(VISUAL_DIR, "residuals_plot.png"))
 ```
-![Residuals Plot](visual/residuals_plot.png)
+![Residuals Plot](./modeling/visual/residuals_plot.png)
 
 ### 3. SHAP Feature Importance
 
@@ -197,5 +197,5 @@ def save_shap_summary_plot(explainer, data, title, filename):
     plt.title(title)
     plt.savefig(os.path.join(VISUAL_DIR, filename), bbox_inches='tight')
 ```
-![Shap](visual/combined_shap_summery.png) 
+![Shap](./modeling/visual/combined_shap_summery.png) 
 
