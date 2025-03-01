@@ -14,12 +14,12 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Define paths using os.path.join() to locate JSON data files correctly
 weekday_files = [
-    os.path.join(BASE_DIR, "[07]-traffic-and-weather-data", "[00]-weekdays", f"merged_traffic_and_weather_{hour}.json")
+    os.path.join(BASE_DIR, "../modeling/[07]-traffic-and-weather-data", "[00]-weekdays", f"merged_traffic_and_weather_{hour}.json")
     for hour in ["9", "12", "15", "18", "21"]
 ]
 
 weekend_files = [
-    os.path.join(BASE_DIR, "[07]-traffic-and-weather-data", "[01]-weekends",
+    os.path.join(BASE_DIR, "../modeling/[07]-traffic-and-weather-data", "[01]-weekends",
                  f"merged_traffic_and_weather_weekend_{hour}.json")
     for hour in ["09", "12", "15", "18", "21"]
 ]
@@ -85,7 +85,7 @@ rmse = np.sqrt(mean_squared_error(test[target], pred))
 mae = mean_absolute_error(test[target], pred)
 
 # Create "visual" folder if it doesn't exist
-VISUAL_DIR = os.path.join(BASE_DIR, "visual")
+VISUAL_DIR = os.path.join(BASE_DIR, "../[09]-visuals/visual")
 os.makedirs(VISUAL_DIR, exist_ok=True)
 
 # Function to plot and save actual vs. predicted jamFactor with explanation

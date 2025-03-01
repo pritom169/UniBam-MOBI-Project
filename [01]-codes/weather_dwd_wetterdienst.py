@@ -139,7 +139,7 @@ def main():
     # Writing the grouped data to CSV files in the csv_outputs folder
     for group_name, data_dict in grouped_data.items():
         # Creating the path for csv file in the csv_outputs folder
-        output_folder = os.path.join(os.path.dirname(__file__), "../csv_outputs")
+        output_folder = os.path.join(os.path.dirname(__file__), "../[10]-source-files/csv_outputs")
         os.makedirs(output_folder, exist_ok=True)
         file_name = os.path.join(output_folder, f"{group_name}_data.csv")
         

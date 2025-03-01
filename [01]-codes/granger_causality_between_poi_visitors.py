@@ -3,7 +3,7 @@ import pandas as pd
 from statsmodels.tsa.stattools import grangercausalitytests, adfuller
 
 #Load POI Data
-with open("data/poi_data.json", "r", encoding="utf-8") as f:
+with open("../Causal_Analysis/data/poi_data.json", "r", encoding="utf-8") as f:
     poi_data = json.load(f)
 
 zone_poi_counts = {}
@@ -22,7 +22,7 @@ for zone_code, address in zone_address_mapping.items():
     zone_poi_counts[zone_code] = count
 
 #Load Visitor Data (with timestamps)
-visitor_data = pd.read_csv("data/mobithek_data_with_rssi_60min.xls", sep=";", skiprows=3, parse_dates=["epocutc"])
+visitor_data = pd.read_csv("../[10]-source-files/mobithek_data_with_rssi_60min.xls", sep=";", skiprows=3, parse_dates=["epocutc"])
 visitor_data.set_index("epocutc", inplace=True)  # Ensure timestamp is the index
 
 # Prepare Visitor Count Per Zone Over Time

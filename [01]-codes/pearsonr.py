@@ -24,7 +24,7 @@ for zone_code, address in zone_address_mapping.items():
 print("POI Counts per Zone:", zone_poi_counts)
 
 # Load Visitor Data
-visitor_data = pd.read_csv("data/mobithek_data_with_rssi_60min.xls", sep=";", skiprows=3)
+visitor_data = pd.read_csv("../[10]-source-files/mobithek_data_with_rssi_60min.xls", sep=";", skiprows=3)
 
 # Identify visitor data columns corresponding to the zones
 zone_visitor_counts = {}
