@@ -1,6 +1,6 @@
 # Modelling Traffic Patterns in Bamberg
 
-A regression-based system to predict traffic congestion (`jamFactor`) using weather, time, and street data. This project processes JSON files containing historical traffic and weather data, trains a **Ridge Regression (L2 Regularization)** model, and allows predictions for specific conditions.
+A regression-based system to predict traffic congestion (`jamFactor`) using weather, time, and street data. This project processes JSON files containing historical traffic and weather data, trains a **Linear Regression ** model, and allows predictions for specific conditions.
 
 ---
 
@@ -52,7 +52,7 @@ Predict the `jamFactor` (a metric indicating traffic congestion severity) using:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/dev-shakil/traffic-modelling.git
+   git clone https://github.com/your_username/traffic-modelling.git
    cd traffic-modelling
    ```
 
@@ -95,12 +95,14 @@ The dataset consists of separate JSON files for:
 
 ## Model Training
 
-### Ridge Regression (L2 Regularization)
+### Linear Regression
 
 ```python
-from sklearn.linear_model import Ridge
-ridge_model = Ridge(alpha=1.0)  # Regularization strength
-ridge_model.fit(train_weekday[features], train_weekday[target])
+from sklearn.linear_model import LinearRegression
+
+# Train Model
+lr = LinearRegression()
+lr.fit(train[features], train[target])
 ```
 
 ### Training Process
@@ -149,34 +151,51 @@ mae = mean_absolute_error(y_true, y_pred)
 Gives the average absolute error in prediction.
 
 ---
+## Results
+
+| Model          | RMSE     | MAE      |
+|----------------|----------|----------|
+| Weekday Model  | 0.87909  | 0.696683 |
 
 ## Visualization
 
 ### 1. Actual vs. Predicted jamFactor
 
 ```python
-plt.scatter(y_actual, y_predicted, color='blue', alpha=0.5)
-plt.plot([min(y_actual), max(y_actual)], [min(y_actual), max(y_actual)], 'r--')
-plt.xlabel("Actual jamFactor")
-plt.ylabel("Predicted jamFactor")
-plt.title("Actual vs. Predicted jamFactor")
-plt.savefig("visual/actual_vs_predicted.png")
+plt.figure(figsize=(8, 6))
+    plt.scatter(actual, predicted, alpha=0.5, color="blue", label="Predictions")
+    plt.plot([min(actual), max(actual)], [min(actual), max(actual)], linestyle="--", color="red",
+             label="Perfect Fit (y=x)")
+    plt.xlabel("Actual jamFactor")
+    plt.ylabel("Predicted jamFactor")
+    plt.title(title)
+    plt.legend()
+    plt.savefig(os.path.join(VISUAL_DIR, filename))
 ```
+![Model Predictions](visual/combined_actual_vs_predictted.png)
 
-### 2. SHAP Feature Importance
+### 2.Residuals Plot
 
 ```python
-explainer = shap.Explainer(ridge_model, train_weekday[features])
-shap_values = explainer(train_weekday[features])
-shap.summary_plot(shap_values, train_weekday[features])
-plt.savefig("visual/shap_summary.png")
+residuals = test[target] - pred
+plt.figure(figsize=(8, 6))
+plt.scatter(pred, residuals, alpha=0.5)
+plt.axhline(y=0, color='r', linestyle='--')
+plt.xlabel("Predicted Values")
+plt.ylabel("Residuals")
+plt.title("Residuals vs Predicted Values")
+plt.savefig(os.path.join(VISUAL_DIR, "residuals_plot.png"))
 ```
+![Residuals Plot](visual/residuals_plot.png)
 
----
+### 3. SHAP Feature Importance
 
-## Future Improvements
-
-✅ **Try Lasso Regression for feature selection.** ✅ **Use Deep Learning Approaches for complex relationships.** ✅ **Integrate Real-Time Traffic Data for live predictions.**
-
----
+```python
+def save_shap_summary_plot(explainer, data, title, filename):
+    shap_values = explainer(data)
+    shap.summary_plot(shap_values, data, show=False)
+    plt.title(title)
+    plt.savefig(os.path.join(VISUAL_DIR, filename), bbox_inches='tight')
+```
+![Shap](visual/combined_shap_summery.png) 
 
