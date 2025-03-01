@@ -5,7 +5,7 @@ historical weather, time, street data, and points of interest (POI) from JSON fi
 provides baseline predictions, a neural network leverages deep learning for complex pattern recognition, and 
 the ensemble method (RandomForest, XGBoost, GradientBoosting) enhances the independence of the predictions by 
 leveraging different input features. All systems utilize the same foundational datasets.
----
+
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -343,13 +343,13 @@ print(f"Predicted jamFactor: {predicted_jamFactor[0]:.2f}")
    plt.scatter(y_test, y_pred)
    plt.plot([min_val, max_val], [min_val, max_val], 'r--')
    ```
-   ![Actual vs Predicted]([08]-results/[00]_actual_vs_predicted.png)
+   ![Actual vs Predicted]([08]-results/[00]-nn-visuals/[00]_actual_vs_predicted.png)
 2. **Residual Plot**:
    ```python
    plt.scatter(y_pred, residuals)
    plt.axhline(0, color='red')
    ```
-   ![Residual Plot]([08]-results/[01]_residual_vs_predicted.png)
+   ![Residual Plot]([08]-results/[00]-nn-visuals/[01]_residual_vs_predicted.png)
 ---
 
 #### Ensemble
@@ -359,14 +359,14 @@ print(f"Predicted jamFactor: {predicted_jamFactor[0]:.2f}")
 
    plt.plot([y.min(), y.max()], [y.min(), y.max()], color="red", linestyle="--", label="Perfect Prediction Line")
    ```
-   ![Actual vs Predicted]([09]-visuals/model_output_visuals/gradient_boosting_actual_vs_predicted_jamfactor.png)
+   ![Actual vs Predicted]([08]-results/[01]-ensembled-model-output-visuals/gradient_boosting_actual_vs_predicted_jamfactor.png)
 2. **Residual Plot**:
    ```python
    sns.scatterplot(x=y_pred, y=residuals, alpha=0.6, color="green", label="Residuals vs Predicted")
 
    plt.axhline(y=0, color="red", linestyle="--", label="Zero Residuals Line")
    ```
-   ![Residual Plot]([09]-visuals/model_output_visuals/gradient_boosting_residuals_vs_predicted_jamfactor.png)
+   ![Residual Plot]([08]-results/[01]-ensembled-model-output-visuals/gradient_boosting_residuals_vs_predicted_jamfactor.png)
 
 #### Linear Regression
 ### 1. Actual vs. Predicted jamFactor
@@ -382,7 +382,7 @@ plt.figure(figsize=(8, 6))
     plt.legend()
     plt.savefig(os.path.join(VISUAL_DIR, filename))
 ```
-![Model Predictions]([09]-visuals/visual/combined_actual_vs_predicted.png)
+![Model Predictions]([08]-results/[02]-linear-regression-visuals/[04]-combined_actual_vs_predicted.png)
 
 ### 2.Residuals Plot
 
@@ -394,6 +394,6 @@ plt.axhline(y=0, color='r', linestyle='--')
 plt.xlabel("Predicted Values")
 plt.ylabel("Residuals")
 plt.title("Residuals vs Predicted Values")
-plt.savefig(os.path.join(VISUAL_DIR, "residuals_plot.png"))
+plt.savefig(os.path.join(VISUAL_DIR, "[05]-residuals_plot.png"))
 ```
-![Residuals Plot]([09]-visuals/visual/residuals_plot.png)
+![Residuals Plot]([08]-results/[02]-linear-regression-visuals/[05]-residuals_plot.png)

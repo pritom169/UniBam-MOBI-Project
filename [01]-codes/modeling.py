@@ -102,7 +102,7 @@ def plot_actual_vs_predicted(actual, predicted, title, filename):
     plt.close()
 
 # Generate actual vs predicted plot
-plot_actual_vs_predicted(test[target], pred, "Combined Model: Actual vs Predicted", "combined_actual_vs_predicted.png")
+plot_actual_vs_predicted(test[target], pred, "Combined Model: Actual vs Predicted", "[04]-combined_actual_vs_predicted.png")
 
 # Create residuals plot
 residuals = test[target] - pred
@@ -112,7 +112,7 @@ plt.axhline(y=0, color='r', linestyle='--')
 plt.xlabel("Predicted Values")
 plt.ylabel("Residuals")
 plt.title("Residuals vs Predicted Values")
-plt.savefig(os.path.join(VISUAL_DIR, "residuals_plot.png"))
+plt.savefig(os.path.join(VISUAL_DIR, "[05]-residuals_plot.png"))
 plt.close()
 
 
