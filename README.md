@@ -5,7 +5,6 @@ historical weather, time, street data, and points of interest (POI) from JSON fi
 provides baseline predictions, a neural network leverages deep learning for complex pattern recognition, and 
 the ensemble method (RandomForest, XGBoost, GradientBoosting) enhances the independence of the predictions by 
 leveraging different input features. All systems utilize the same foundational datasets.
----
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
