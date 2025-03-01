@@ -24,7 +24,6 @@ weekend_files = [
     for hour in ["09", "12", "15", "18", "21"]
 ]
 
-
 # Function to load and preprocess data from JSON files
 def load_data(file_paths, is_weekend):
     data_list = []
@@ -56,53 +55,38 @@ def load_data(file_paths, is_weekend):
 
     return pd.DataFrame(data_list)  # Return structured DataFrame
 
-
-# Load weekday and weekend data
+# Load and combine data
 df_weekday = load_data(weekday_files, is_weekend=0)
 df_weekend = load_data(weekend_files, is_weekend=1)
+df_combined = pd.concat([df_weekday, df_weekend], ignore_index=True)
 
 # Drop original date column (not needed for modeling)
-df_weekday.drop(columns=["date"], inplace=True)
-df_weekend.drop(columns=["date"], inplace=True)
+df_combined.drop(columns=["date"], inplace=True)
 
 # Handle missing temperature values by filling with the mean temperature
-df_weekday["temperature"].fillna(df_weekday["temperature"].mean(), inplace=True)
-df_weekend["temperature"].fillna(df_weekend["temperature"].mean(), inplace=True)
+df_combined["temperature"].fillna(df_combined["temperature"].mean(), inplace=True)
 
 # Split data into training (60%) and testing (40%) sets
-train_weekday, test_weekday = train_test_split(df_weekday, test_size=0.4, random_state=42)
-train_weekend, test_weekend = train_test_split(df_weekend, test_size=0.4, random_state=42)
+train, test = train_test_split(df_combined, test_size=0.4, random_state=42)
 
 # Define features and target variable
 features = ["speed", "temperature", "number_of_nearby_pois", "day_of_week", "is_weekend"]
 target = "jamFactor"
 
-# Train Linear Regression Model for Weekdays
-lr_weekday = LinearRegression()
-lr_weekday.fit(train_weekday[features], train_weekday[target])
+# Train Linear Regression Model
+lr = LinearRegression()
+lr.fit(train[features], train[target])
 
-# Predict on Weekday Test Set
-pred_weekday = lr_weekday.predict(test_weekday[features])
+# Predict on Test Set
+pred = lr.predict(test[features])
 
-# Calculate RMSE & MAE for Weekdays
-rmse_weekday = np.sqrt(mean_squared_error(test_weekday[target], pred_weekday))
-mae_weekday = mean_absolute_error(test_weekday[target], pred_weekday)
-
-# Train Linear Regression Model for Weekends
-lr_weekend = LinearRegression()
-lr_weekend.fit(train_weekend[features], train_weekend[target])
-
-# Predict on Weekend Test Set
-pred_weekend = lr_weekend.predict(test_weekend[features])
-
-# Calculate RMSE & MAE for Weekends
-rmse_weekend = np.sqrt(mean_squared_error(test_weekend[target], pred_weekend))
-mae_weekend = mean_absolute_error(test_weekend[target], pred_weekend)
+# Calculate RMSE & MAE
+rmse = np.sqrt(mean_squared_error(test[target], pred))
+mae = mean_absolute_error(test[target], pred)
 
 # Create "visual" folder if it doesn't exist
 VISUAL_DIR = os.path.join(BASE_DIR, "visual")
 os.makedirs(VISUAL_DIR, exist_ok=True)
-
 
 # Function to plot and save actual vs. predicted jamFactor with explanation
 def plot_actual_vs_predicted(actual, predicted, title, filename):
@@ -114,65 +98,46 @@ def plot_actual_vs_predicted(actual, predicted, title, filename):
     plt.ylabel("Predicted jamFactor")
     plt.title(title)
     plt.legend()
-
-    # Add explanation inside the image
-    explanation = "🔵 Predictions vs. Actual\n🔴 Red Line = Perfect Fit (Ideal Prediction)\n" \
-                  "Points below the line → Underestimation\nPoints above the line → Overestimation"
-    plt.text(0.1, max(actual) * 0.9, explanation, fontsize=10, bbox=dict(facecolor="white", alpha=0.8))
-
     plt.savefig(os.path.join(VISUAL_DIR, filename))
     plt.close()
+
+# Generate actual vs predicted plot
+plot_actual_vs_predicted(test[target], pred, "Combined Model: Actual vs Predicted", "combined_actual_vs_predicted.png")
+
+# Create residuals plot
+residuals = test[target] - pred
+plt.figure(figsize=(8, 6))
+plt.scatter(pred, residuals, alpha=0.5)
+plt.axhline(y=0, color='r', linestyle='--')
+plt.xlabel("Predicted Values")
+plt.ylabel("Residuals")
+plt.title("Residuals vs Predicted Values")
+plt.savefig(os.path.join(VISUAL_DIR, "residuals_plot.png"))
+plt.close()
 
 
 # Function to save SHAP summary plot with proper text placement
 def save_shap_summary_plot(explainer, data, title, filename):
     shap_values = explainer(data)
 
-    # Further increase figure size for more space on the right
-    plt.figure(figsize=(14, 6))  # Extra-wide image
+    # Increase figure size for better visibility
+    plt.figure(figsize=(12, 6))  # Wider figure to accommodate text
 
-    shap.summary_plot(shap_values, data, show=False)  # Generate SHAP summary plot
-
-    # Get x and y limits to place text properly
-    x_min, x_max = plt.xlim()
-    y_min, y_max = plt.ylim()
-
-    explanation = ("🔴 Red = Higher Feature Value\n🔵 Blue = Lower Feature Value\n"
-                   "➡️ Right = Increases Congestion (jamFactor)\n"
-                   "⬅️ Left = Decreases Congestion\n"
-                   "📊 Top features have the most impact on traffic.")
-
-    # Move text even further right to fully clear the feature value color bar
-    plt.text(x_max + (x_max - x_min) * 0.5, y_max * 0.8, explanation, fontsize=12,
-             bbox=dict(facecolor="white", alpha=0.8), ha='left')
-
-    # Save the SHAP summary image
-    plt.savefig(os.path.join(VISUAL_DIR, filename), bbox_inches="tight")
+    shap.summary_plot(shap_values, data, show=False)
+    plt.title(title)
+    plt.savefig(os.path.join(VISUAL_DIR, filename), bbox_inches='tight')
     plt.close()
 
 
-# Generate all plots
-plot_actual_vs_predicted(test_weekday[target], pred_weekday, "Weekday Model: Actual vs. Predicted",
-                         "weekday_actual_vs_predicted.png")
-plot_actual_vs_predicted(test_weekend[target], pred_weekend, "Weekend Model: Actual vs. Predicted",
-                         "weekend_actual_vs_predicted.png")
-
-# Save SHAP summary plots with explanations
+# Then perform SHAP analysis
 shap.initjs()
-
-# SHAP for Weekday Model
-explainer_weekday = shap.Explainer(lr_weekday, train_weekday[features])
-save_shap_summary_plot(explainer_weekday, train_weekday[features], "Weekday SHAP Summary", "weekday_shap_summary.png")
-
-# SHAP for Weekend Model
-explainer_weekend = shap.Explainer(lr_weekend, train_weekend[features])
-save_shap_summary_plot(explainer_weekend, train_weekend[features], "Weekend SHAP Summary", "weekend_shap_summary.png")
-
+explainer = shap.Explainer(lr, train[features])
+save_shap_summary_plot(explainer, train[features], "Combined SHAP Summary", "combined_shap_summary.png")
 # Display Results
 results_df = pd.DataFrame({
-    "Model": ["Weekday Model", "Weekend Model"],
-    "RMSE": [rmse_weekday, rmse_weekend],
-    "MAE": [mae_weekday, mae_weekend]
+    "Model": ["Combined Model"],
+    "RMSE": [rmse],
+    "MAE": [mae]
 })
 
 print(results_df)
